@@ -1,0 +1,126 @@
+body {
+	background-color:#ffffff;
+	font-family:Osaka, 'ヒラギノ角ゴ Pro W3', sans-serif;
+}
+div#body{
+	width:100%;
+	margin:auto;
+	text-align:left;
+	font-size: 10pt; /*文字サイズ*/
+}
+div#header{
+	width:100%;
+	margin:auto;
+	padding:10px;
+	text-align:left;
+}
+/*メニュー CSS*/
+ul#menu {
+	height:40px;
+	background-color:#444444;
+	color:#eeeeee;
+}
+li#menu01,li#menu02 {
+	float:left; /*リスト項目を横に並べる*/
+	display:inline; /*リスト項目をインライン表示にする*/
+	list-style-type:none;/*リストマーカー無しにする*/
+	text-align:right
+}
+/*ボタン01～05にはそれぞれ異なる背景画像を指定する*/
+li#menu01 {
+	width:20%;
+	height:42px;
+	/*背景画像に合わせたサイズ指定*/
+}
+li#menu02 {
+	width:18%;
+	height:42px;/*背景画像に合わせたサイズ指定*/
+}
+ul#menu a {
+	display:block;/*リンクをブロック表示にする*/
+	height:42px;
+	padding-top:7px;
+	text-align:center;
+	text-decoration:none;/*リンクの下線を無くす*/
+	font-family:Arial, Helvetica, sans-serif;/*フォントの種類*/
+}
+ul#menu a:link{color:#dddddd}
+ul#menu a:visited{color:#dddddd}
+ul#menu a:active{color:#dddddd}
+ul#menu a:hover{color:#dddddd}
+div#left{
+	width 30%;
+	font-size:95%;
+	border:0px solid silver;
+	float:left;
+	margin-bottom:5px;
+}
+div#middle{
+	line-height: 2;
+	/*行間隔*/width:68%;
+	font-size:95%;
+	margin-right:5px;
+	float:right;
+	text-align:left;
+}
+div#footer{
+	padding:10px;
+	text-align:center;
+	clear:both;
+}
+hr.style-1 {
+	border-top: 2px dotted #8c8b8b;
+	border-bottom: 2px dotted #fff;
+}
+/*テーブル CSS*/
+table.update{}.update td{
+	font-size: 10pt;/*文字サイズ*/
+}
+table.cv{}.cv td{
+	font-size: 10pt;/*文字サイズ*/
+	line-height: 2;/*行間隔*/
+}
+div.indent_text {
+	padding-left:2em;
+	text-indent:0em;
+}
+/*テーブル CSS End*/
+p, div {
+	line-height:1.5;
+}
+
+a:link{color:#777733;}
+a:visited{color:#777733;}
+a:active{color:#777733;}
+a:hover{color:#883388;}
+a#sub:link{color:black;}
+a#sub:visited{color:black;}
+a#sub:active{color:#333333;}
+a#sub:hover{color:black;}
+a#sub{
+	text-decoration:none;/*リンクの下線を無くす*/
+}
+.title{
+	/*タイトル部分*/
+	background-color: #DCDCDF;/*背景色*/
+	color: #221122;/*文字色*/
+	width: 90%;/*幅*/
+	padding: 2px 1em;
+	border-left: double 17px #888888;/*左の二本線*/
+	border-right: dashed 2px #DCDCDF;/*右の点線*/
+	font-size: 10pt;/*文字サイズ*/
+	font-weight: bold;/*太字*/
+	font-family: 'ヒラギノ角ゴ Pro W3',Arial,sans-serif;
+	letter-spacing: 0em;/*文字間隔*/
+}
+.text{
+	width: 89.9%;/*幅。*/
+	padding: 8px 4px 7px 9px;
+	margin: 0px 0px 0px 3px;
+	line-height: 2;/*行間隔*/
+	border-left: solid 1px #888888;/*枠色*/
+	border-bottom: solid 1px #989898;
+	border-right: dashed 2px #FDFDFD;
+	background-color: #FDFDFD;/*薄い背景色*/
+	font-size: 10pt;/*文字サイズ*/
+}
