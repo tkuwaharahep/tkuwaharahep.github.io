@@ -1,27 +1,40 @@
 <html ng-app="myApp">
-<!-- begin of header -->
-<head>
+
+<!-- begin of header -->
+
+<head>
 	<!-- スタイルシート使用の宣言 -->
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<title>Physics -T.Kuwahara-</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="./style_ph.css">
-<script language="JavaScript" type="text/JavaScript">
-	<!--/*****************************************************************
-	機　能： オブジェクトの表示非表示を制御する 1*
-	（表示している場合は非表示、非表示の場合は表示）*
-	引　数： ch 表示/非表示を切り替えるオブジェクト名*
+
+
+<script language="JavaScript" type="text/JavaScript">
+	<!--
+/****************************************************************
+*
+	機　能： オブジェクトの表示非表示を制御する 1
+*
+	（表示している場合は非表示、非表示の場合は表示）
+*
+	引　数： ch 表示/非表示を切り替えるオブジェクト名
+*
 	戻り値： なし
 	****************************************************************/
 	function
 	checkExpand(ch) {
 		var obj　=　document.all && document.all(ch) || document.getElementById && document.getElementById(ch);
-		if(obj && obj.style) obj.style.display=    "none" == obj.style.display ?"" : "none"
-	}//-->
+		if(obj && obj.style) obj.style.display=
+    "none" == obj.style.display ?"" : "none"
+	}
+//-->
 	</script>
 </head>
-<!-- end of header -->
-<body>
+
+<!-- end of header -->
+
+<body>
 	<div id="body">
 	<div id="header">
 		<h1><a href="../index.html" style="text-decoration:none"><font color="black">Takumi KUWAHARA</font></a>
@@ -46,14 +59,17 @@
 	</div>
 	<div id="middle">
 		<div class="title">
-			Papers<small>[<a href="#" id="title" onClick="checkExpand('research');">show/hide</a>]</small>
+			Papers
+<small>[<a href="#" id="title" onClick="checkExpand('research');">show/hide</a>]</small>
 		</div>
 		<div class="text">
 			<div id="research" style="display:none"><br>
 				<!-- <a href="comment.html">
 				Comment on publications and theses (in Japanese)</a>
 				-->
-				<!--				Published Papers				-->
+				<!--
+				Published Papers
+				-->
 				<h3>2019</h3>
 				<ol>
 					<li>
@@ -177,7 +193,8 @@
 						[<a href="http://arxiv.org/abs/1507.05836" target='blank'>hep-ph/1507.05836</a>
 						/ <b>JHEP 1511 (2015) 085</b>]
 					</li>
-					with J. Hisano, D. Kobayashi, W. Kuramoto
+					with J. Hisano, D. Kobayashi, W. Kuramoto
+
 					<li>
 						<b>
 							<a href="http://inspirehep.net/record/1357018" target='blank'>Threshold Corrections to Baryon Number Violating Operators in Supersymmetric SU(5) GUTs</a>
@@ -197,7 +214,8 @@
 						[<a href="http://arxiv.org/abs/1304.3651" target='blank'>hep-ph/1304.3651</a>
 						/ <b>JHEP 1307 (2013) 038</b>]
 					</li>
-					with J. Hisano, D. Kobayashi, N. Nagata
+					with J. Hisano, D. Kobayashi, N. Nagata
+
 					<li>
 						<b>
 							<a href="http://inspirehep.net/record/1226006" target='blank'>Grand Unification in High-scale Supersymmetry</a>
@@ -218,9 +236,23 @@
 
 		<div class="text">
 			<div id="presentation" style="display:none">
-				<!--				Conference Presentations				-->
+				<!--
+				Conference Presentations
+				-->
 				<h3 id="international">International Conference/Workshop</h3>
 				<ol>
+					<br>
+					<li><b>International joint workshop on the Standard Model and beyond (KEK-KIAS-NCTS-ITP CAS joint workshop)</b>
+						<br>
+						Oct 14 - 17, 2019 @ Beijing, China<br>
+						Electric Dipole Moments in Electroweakly Interacting Massive Particle Models
+					</li>
+					<br>
+					<li><b>New physics beyond the Standard Model</b>
+						<br>
+						Oct 9 - 12, 2019 @ Beijing, China<br>
+						Baryon-Dark Matter Coincidence and Composite Asymmetric Dark Matter
+					</li>
 					<br>
 					<li><b>Summer Institute 2019</b>
 						<br>
@@ -267,7 +299,8 @@
 					<li><b>CETUP* Workshop on Neutrino Physics/Unification Session </b>
 						<br>
 						June 20 - July 1, 2016 @ Lead-Deadwood South-Dakota (US)<br>
-						Threshold Corrections to Dimension-Six      	Proton Decay Operators in SUSY SU(5)
+						Threshold Corrections to Dimension-Six
+      	Proton Decay Operators in SUSY SU(5)
 					</li>
 					<br>
 					<li><b>Flavors of New Physics </b><br>
