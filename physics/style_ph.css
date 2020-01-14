@@ -1,6 +1,6 @@
 body {
 	background-color:#ffffff;
-	font-family:Osaka, 'ヒラギノ角ゴ Pro W3', sans-serif;
+	font-family:'ヒラギノ角ゴ Pro W3', sans-serif;
 }
 div#body{
 	width:100%;
@@ -77,7 +77,7 @@ table.cv{}.cv td{
 }
 /* リスト 間隔 */
 li {
-	margin-bottom: 10px;
+margin-bottom: 10px;
 }
 /*テーブル CSS End*/
 p, div {
