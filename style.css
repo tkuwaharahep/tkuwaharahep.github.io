@@ -1,8 +1,9 @@
 body {
 	background-color:#ffffff;
-	font-family:Osaka, 'ヒラギノ角ゴ Pro W3', sans-serif;
+	font-family:'ヒラギノ角ゴ Pro W3', sans-serif;
 }
-div#body{
+
+div#body{
 	width:100%;
 	margin:auto;
 	text-align:left;
@@ -44,44 +45,63 @@ ul#menu a {
 	text-decoration:none;/*リンクの下線を無くす*/
 	font-family:Arial, Helvetica, sans-serif;/*フォントの種類*/
 }
-ul#menu a:link{color:#dddddd}
-ul#menu a:visited{color:#dddddd}
-ul#menu a:active{color:#dddddd}
-ul#menu a:hover{color:#dddddd}
-div#left{
+ul#menu a:link{color:#dddddd
+}
+
+ul#menu a:visited{color:#dddddd
+}
+ul#menu a:active{color:#dddddd
+}
+ul#menu a:hover{color:#dddddd
+}
+
+div#left{
 	width 30%;
 	font-size:95%;
 	border:0px solid silver;
 	float:left;
 	margin-bottom:5px;
-}
-div#middle{
+
+}
+
+div#middle{
 	line-height: 2;
 	/*行間隔*/width:68%;
 	font-size:95%;
 	margin-right:5px;
 	float:right;
 	text-align:left;
-}
+
+}
 div#footer{
 	padding:10px;
 	text-align:center;
 	clear:both;
-}
-hr.style-1 {
+
+}
+
+
+hr.style-1 {
 	border-top: 2px dotted #8c8b8b;
 	border-bottom: 2px dotted #fff;
-}
-/*テーブル CSS*/
-table.update{}.update td{
+
+}
+
+
+/*テーブル CSS*/
+table.update{}
+.update td{
 	font-size: 10pt;/*文字サイズ*/
 }
-table.cv{}.cv td{
+
+table.cv{}
+.cv td{
 	font-size: 10pt;/*文字サイズ*/
 	line-height: 2;/*行間隔*/
 }
 div.indent_text {
-	padding-left:2em;
+	
+padding-left:2em;
 	text-indent:0em;
 }
 /*テーブル CSS End*/
@@ -90,14 +110,22 @@ p, div {
 }
 
 a:link{color:#777733;}
-a:visited{color:#777733;}
-a:active{color:#777733;}
-a:hover{color:#883388;}
-a#sub:link{color:black;}
-a#sub:visited{color:black;}
-a#sub:active{color:#333333;}
-a#sub:hover{color:black;}
-a#sub{
+
+a:visited{color:#777733;}
+
+a:active{color:#777733;}
+
+a:hover{color:#883388;}
+
+a#sub:link{color:black;}
+
+a#sub:visited{color:black;}
+
+a#sub:active{color:#333333;}
+
+a#sub:hover{color:black;}
+
+a#sub{
 	text-decoration:none;/*リンクの下線を無くす*/
 }
 .title{
@@ -123,4 +151,5 @@ a:link{color:#777733;}
 	border-right: dashed 2px #FDFDFD;
 	background-color: #FDFDFD;/*薄い背景色*/
 	font-size: 10pt;/*文字サイズ*/
-}
+
+}
