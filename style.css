@@ -306,6 +306,9 @@ li#thispage a{
         width:60vw;
         padding:0 5vw 0 0;
     }
+    .name_main{
+        display:none;
+    }
 
     #sub_main{
         float: right;
