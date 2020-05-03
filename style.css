@@ -139,7 +139,7 @@ li#thispage a{
 }
 @media only screen and (max-width: 480px){
     /* Smallest width */
-    #title {height: 0px;}
+    #title {height: 50px;}
     .menu{
         width:100vw;
         padding:0;
