@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>レスポンシブ対応メニュー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=3.8.1"></script>
+    <!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: #222;
+            font-size: 13px;
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px 0 0;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0 10px 10px;
+            font-size: 24px;
+        }
+
+        .main {
+            clear: both;
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px 0 200px;
+            background: #999;
+            text-align: center;
+        }
+
+
+
+        #menu {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #menu li {
+            display: block;
+            float: left;
+            width: 12.5%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li a {
+            display: block;
+            padding: 12px 0 10px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #menu li a:hover {
+            background: #444;
+        }
+
+        #toggle {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            #menu li {
+                width: 25%;
+                border-bottom: 1px solid #444;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #menu {display: none;}
+
+            #menu li {width: 100%;}
+
+            #toggle {
+                display: block;
+                position: relative;
+                width: 100%;
+                background: #222;
+            }
+
+            #toggle a {
+                display: block;
+                position: relative;
+                padding: 12px 0 10px;
+                border-bottom: 1px solid #444;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            #toggle:before {
+                display: block;
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                background: #fff;
+            }
+
+            #toggle a:before,
+            #toggle a:after {
+                display: block;
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                width: 20px;
+                height: 4px;
+                background: #222;
+            }
+
+            #toggle a:before {
+                margin-top: -6px;
+            }
+
+            #toggle a:after {
+                margin-top: 2px;
+            }
+        }
+    </style>
+
+    <script type='text/javascript'>
+        $(function () {
+            $("#toggle").click(function () {
+                $("#menu").slideToggle();
+                return false;
+            });
+            $(window).resize(function () {
+                var win = $(window).width();
+                var p = 480;
+                if (win > p) {
+                    $("#menu").show();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>sample</h1>
+    </div>
+    <div class="menu-box">
+        <div id="toggle"><a href="#">menu</a></div>
+        <ul id="menu">
+            <li><a href="#">html</a></li>
+            <li><a href="#">css</a></li>
+            <li><a href="#">javascript</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">CGI</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Ruby</a></li>
+            <li><a href="#">java</a></li>
+        </ul>
+    </div>
+    <div class="main">メインコンテンツ</div>
+</body>
+
+
+</html>
