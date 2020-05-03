@@ -30,7 +30,9 @@ body {
     text-decoration: none;
 }
 #toggle{
- display: none;
+    display: none;
+    width: 100vw;
+    height: 50px;
 }
 
 
@@ -138,7 +140,7 @@ li#thispage a{
 }
 @media only screen and (max-width: 480px){
     /* Smallest width */
-    #title {height: 40px;}
+    #title {height: 50px;}
     .menu{
         width:100vw;
         padding:0;
@@ -147,7 +149,9 @@ li#thispage a{
         padding: 0 ;
         margin: 0;
     }
-    #menulist {display: none;}
+    #menulist {
+        display: none;
+    }
     #menulist li {width: 100%;}
     .menu ul{
         margin:0;
