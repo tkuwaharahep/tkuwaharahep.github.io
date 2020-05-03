@@ -32,8 +32,6 @@ body {
     display: none;
     width: 100%;
 }
-
-
 #footermenu {
     position: fixed;    /* fixed header*/
     width: 100%;
@@ -219,24 +217,24 @@ li#thispage a{
         padding:0 5vw 0 0;
     }
     #sub_main{
-        width: 80vw;
+        width: 80%;
         height: auto;
 	    background-color: #FDFDFD;/*薄い背景色*/
         margin: 0 0 5em 0;
         padding: 0 0 0 0;
     }
     #sub_contact{
-        width: 80vw;
+        width: 80%;
         height: auto;
         background-color: #FDFDFD;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        margin: 0;
+        padding: 0;
         }
     #sub_menu{
-        width: 80vw;
+        width: 80%;
         height: auto;
         background-color: #FDFDFD;
-        margin: 0 0 0 0;
+        margin: 0;
     }
 }
 
@@ -261,24 +259,24 @@ li#thispage a{
         padding:0 5vw 0 0;
     }
     #sub_main{
-        width: 80vw;
+        width: 80%;
         height: auto;
 	    background-color: #FDFDFD;/*薄い背景色*/
         margin: 0 0 5em 0;
-        padding: 0 0 0 0;
+        padding: 0;
     }
     #sub_contact{
-        width: 80vw;
+        width: 80%;
         height: auto;
         background-color: #FDFDFD;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        margin: 0;
+        padding: 0;
         }
     #sub_menu{
-        width: 80vw;
+        width: 80%;
         height: auto;
         background-color: #FDFDFD;
-        margin: 0 0 0 0;
+        margin: 0;
     }
 }
 
@@ -314,23 +312,23 @@ li#thispage a{
         width: 60vw;
         height: auto;
 	    background-color: #FDFDFD;/*薄い背景色*/
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        margin: 0;
+        padding: 0;
     }
     #sub_contact{
         float: left;
         width: 28vw;
         height: auto;
         background-color: #FDFDFD;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+        margin: 0;
+        padding: 0;
         }
     #sub_menu{
         float: left;
         width: 28vw;
         height: auto;
         background-color: #FDFDFD;
-        margin: 0 0 0 0;
+        margin: 0;
     }
 }
 
@@ -429,7 +427,7 @@ div.indent_text {
 
 #sub_panel {
     width: 90vw;
-    height: 500px;
+    height: auto;
     margin: 0em 5vw;
     padding: 100px 0 0;
     font-size: 10pt;
@@ -439,7 +437,7 @@ h3#sub_title{
     background-color: #DCDCDF;/*背景色*/
     border-left: double 17px #888888;/*左の二本線*/
 	border-right: dashed 2px #DCDCDF;/*右の点線*/
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0 0 0 30px;
 }
 #sub_contact li{
