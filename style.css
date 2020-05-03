@@ -141,7 +141,7 @@ li#thispage a{
     /* Smallest width */
     #title {height: 50px;}
     .menu{
-        width:100vw;
+        width:100%;
         padding:0;
     }
     .headmenu{
@@ -149,6 +149,7 @@ li#thispage a{
         margin: 0;
     }
     #menulist {
+        width:100%;
         display: none;
     }
     #menulist li {width: 100%;}
