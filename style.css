@@ -32,7 +32,6 @@ body {
 #toggle{
     display: none;
     width: 100vw;
-    height: 50px;
 }
 
 
@@ -42,7 +41,7 @@ body {
     height: 40px;
     background-color: #f92;
     margin: 0;
-    font-size: 10px;
+    font-size: 12px;
     opacity: 0.95;
     bottom: 0; /*下に固定*/
 }
@@ -140,7 +139,7 @@ li#thispage a{
 }
 @media only screen and (max-width: 480px){
     /* Smallest width */
-    #title {height: 50px;}
+    #title {height: 0px;}
     .menu{
         width:100vw;
         padding:0;
