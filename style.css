@@ -422,6 +422,11 @@ a#subtitle{
     font-size: 10pt;/*文字サイズ*/
     font-family: 'ヒラギノ角ゴ Pro W3',Arial,sans-serif;
 }
+.main_text h3{
+    display: table; /*adjust text width*/
+    border-top: solid 2px #FFC778;/*上線*/
+    border-bottom: double 5px #FFC778;
+}
 div.indent_text {
     padding-left: 2em;
     padding-top: 1em;
@@ -471,6 +476,27 @@ h3#sub_title{
 }
 .clearmultilist {
     clear: left; 
+}
+/* CV contents */
+hr.style-1 {
+	border-top: 2px dotted #8c8b8b;
+	border-bottom: 2px dotted #fff;
+}
+.CVContent {
+	width: 100%%;
+}
+.CVContent h4 {
+	font-size: 1.2em;
+	margin-bottom: -2px;
+}
+.CVContent h5 {
+	font-size: 1em;
+	margin-bottom: -2px;
+}
+.CVsubDetails {
+	font-size: 0.8em;
+	font-style: italic;
+	margin-bottom: 3px;
 }
 /* tree-label */
 .researchtitle{
