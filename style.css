@@ -465,18 +465,23 @@ h3#sub_title{
 .multilist_text {
     margin: 5px;
     padding: 0;
-    width: 90vw;
+    width: 100vw;
     list-style: outside;
 }
 .multilist_text li {
     margin: 3px;
     padding: 0;
     float: left;
-    width: 190px;
+    width: 500px;
 }
 .clearmultilist {
     clear: left; 
 }
+
+p.image img {
+    width: 300px;  /* 横幅を200pxに */
+}
+
 /* CV contents */
 hr.style-1 {
 	border-top: 2px dotted #8c8b8b;

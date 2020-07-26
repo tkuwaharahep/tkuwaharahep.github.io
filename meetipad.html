@@ -1,0 +1,77 @@
+<html ng-app="myApp">
+
+<!-- begin of header -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>Review Articles -T.Kuwahara-</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type='text/javascript' src="./js/menumini.js"></script>
+</head>
+
+<!-- end of header -->
+
+<body>
+	<!-- Header from here -->
+	<div id="title">
+		<nav class="headmenu">
+			<div class="title-inner">
+				<h1><a href="index.html">Takumi KUWAHARA</a></h1>
+			</div>
+			<div class="menu">
+				<div id="toggle"><a href="#">menu</a></div>
+				<ul id="menulist">
+					<li><a href="index.html">Top</a></li>
+					<li><a href="cv.html">Curriculum Vitae</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li id="thispage"><a href="misc.html">Misc.</a></li>
+				</ul> 
+			</div>
+		</nav>
+	</div>
+	<!-- Header fin -->
+	<!-- Footer menu from here -->
+	<div id="footermenu">
+		<nav class="contentsmenu">
+			<div class="contentstitle-inner">
+				<h3>Misc. ||</h3>
+			</div>
+			<div class="submenu">
+				<ul>
+					<li><a href="misc.html" id="sub">Misc. top</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- Footer menu fin -->
+	<!-- main contents -->
+	<div id="main_woimg">
+		<div class="main_text">
+			<h3> Google meetでiPad上のスクリーンを共有する方法</h3>
+			Google meetを使って、ミーティングを行う際に音声・ビデオはmacを使いたいが、リアルタイムでiPadの画面（ノート上で実際に計算するなど）の共有も同時に行いたい場合がある。
+			この場合、以下の方法がある。
+			<ul>
+				<li>iPad側で直接Google Meetに参加する</li>
+				<li>iPadの画面をQuickTime Playerで録画状態にすることで、共有する </li>
+			</ul>
+
+			１つ目の方法が最も安直であるが、iPad側のマイクは調整ができないようなのでmac側の音を拾ってハウリングをおこす（外付けmicを使っていれば問題はない）。<br>
+			
+			QuickTime Playerでは、USBで接続中のiPadをカメラとして使用することができる。
+			mac側でQuickTime Playerを起動し、Fileから"New Movie Recording"をクリックする。
+			<p class="image">
+				<img src="./img/ipad1.png" alt="">
+			</p>
+			録画ボタンの隣のタブから、iPadを選択することでQuickTime Playerでの録画準備状態になる。
+			この状態で、Google MeetでQuickTime Playerのウインドウ共有を行えば、リアルタイムでのiPad画面の共有が可能である。
+		</div>
+	</div>
+	<!-- main contents fin  -->
+	<div id="footer"></div>
+	<!-- footer fin -->
+</body>
+
+</html>
+
