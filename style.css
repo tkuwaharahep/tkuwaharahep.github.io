@@ -5,6 +5,14 @@ body {
 	background-color: #FDFDFD;
 	/* background-color: #000; */
 }
+h2 {
+    font-family: 'Raleway','Hiragino Sans',"Helvetica",Arial,sans-serif;
+    font-size: 30px
+}
+h3 {
+    font-family: 'Raleway','Hiragino Sans',"Helvetica",Arial,sans-serif;
+    font-size: 18px
+}
 
 #title {
     position: fixed;    /* fixed header*/
@@ -14,7 +22,7 @@ body {
     background-color: black;
     margin: 0;
     opacity: 0.8;
-	font-family: "Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+	font-family: 'Raleway','Hiragino Sans',"Helvetica Neue",Arial,sans-serif;
 }
 
 .title-inner h1{
@@ -307,7 +315,7 @@ li#thispage a{
         padding:0 5vw 0 0;
     }
     .name_main{
-        display:none;
+        display: none;
     }
 
     #sub_main{
@@ -356,9 +364,9 @@ a#subtitle{
 #topimg {
     position: relative;
     z-index: 10;
-    width: 90vw;
+    width: 100vw;
     height: 40vw;
-    margin: 0 5vw;
+    margin: 0 0vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -373,9 +381,9 @@ a#subtitle{
 #cvimg {
     position: relative;
     z-index: 10;
-    width: 90vw;
+    width: 100vw;
     height: 40vw;
-    margin: 0 5vw;
+    margin: 0 0vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -411,7 +419,7 @@ a#subtitle{
 	border-right: dashed 2px #DCDCDF;/*右の点線*/
 	font-size: 10pt;/*文字サイズ*/
 	font-weight: bold;/*太字*/
-	font-family: 'ヒラギノ角ゴ Pro W3',Arial,sans-serif;
+	font-family: 'Hiragino Sans',Arial,sans-serif;
 	letter-spacing: 0em;/*文字間隔*/
 }
 .main_text{
@@ -420,12 +428,13 @@ a#subtitle{
 	line-height: 2;/*行間隔*/
 	background-color: #FDFDFD;/*薄い背景色*/
     font-size: 10pt;/*文字サイズ*/
-    font-family: 'ヒラギノ角ゴ Pro W3',Arial,sans-serif;
+    font-family: 'Hiragino Sans',Arial,sans-serif;
 }
 .main_text h3{
     display: table; /*adjust text width*/
     border-top: solid 2px #FFC778;/*上線*/
     border-bottom: double 5px #FFC778;
+    font-size: 13pt;/*文字サイズ*/
 }
 div.indent_text {
     padding-left: 2em;
@@ -439,7 +448,7 @@ div.indent_text {
     margin: 0em 5vw;
     padding: 100px 0 0;
     font-size: 10pt;
-    font-family: 'ヒラギノ角ゴ Pro W3',Arial,sans-serif;
+    font-family: 'Hiragino Sans',Arial,sans-serif;
 }
 h3#sub_title{
     background-color: #DCDCDF;/*背景色*/
@@ -512,7 +521,7 @@ hr.style-1 {
     border-left: double 17px #A9A9A9;
     border-right: dashed 2px #DCDCDF;
     font-size: 10pt;
-    font-family: 'ヒラギノ角ゴ Pro W3',Arial,sans-serif;
+    font-family: 'Hiragino Sans',Arial,sans-serif;
     letter-spacing: 0em;
 }
 
