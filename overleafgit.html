@@ -1,0 +1,88 @@
+<html ng-app="myApp">
+
+<!-- begin of header -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>Overleaf + git</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type='text/javascript' src="./js/menumini.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- end of header -->
+
+<body>
+	<!-- Header from here -->
+	<div id="title">
+		<nav class="headmenu">
+			<div class="title-inner">
+				<h1><a href="index.html">Takumi KUWAHARA</a></h1>
+			</div>
+			<div class="menu">
+				<div id="toggle"><a href="#">menu</a></div>
+				<ul id="menulist">
+					<li><a href="index.html">Top</a></li>
+					<li><a href="cv.html">Curriculum Vitae</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li id="thispage"><a href="misc.html">Misc.</a></li>
+				</ul> 
+			</div>
+		</nav>
+	</div>
+	<!-- Header fin -->
+	<!-- Footer menu from here -->
+	<div id="footermenu">
+		<nav class="contentsmenu">
+			<div class="contentstitle-inner">
+				<h3>Misc. ||</h3>
+			</div>
+			<div class="submenu">
+				<ul>
+					<li><a href="misc.html" id="sub">Misc. top</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- Footer menu fin -->
+	<!-- main contents -->
+	<div id="main_woimg">
+		<div class="main_text">
+			<h3> Overleaf + Git</h3>
+			<a href="https://www.overleaf.com/">Overleaf</a>は複数人で原稿を同時編集するにはとても便利なオンラインLaTeXエディタではあるものの、
+			オフラインの自分のエディタのほうが慣れていることも多い（overleafも様々なエディタを用意してくれている。用意されているカラーコードがどうにも慣れなくて、カラーコードを自分で編集する方法があればもっと良かった）。
+			version管理もしてくれるGithubとの連携で、オフラインでの編集をしようとしたが、Github連携そのものは有料版でのオプションだった。
+			なんだと思いしばらく放置していたのだが、有料なのはGithub連携に関してのみで、Gitは別に有料版オプションでも何でもなかったのを見逃していた。
+			<br>
+			以下に、備忘録としてOverleaf + Gitを用いてversion管理をしつつオフラインでのファイル編集を行う方法を簡単に書き記しておく。
+
+			<ul>
+				<li>OverleafのMenu欄からGit linkを獲得</li>
+				<p class="image">
+					<img src="./img/overleaf1.png" width="70%" alt="">
+				</p>
+				<li>オフライン上でレポジトリの追加</li>
+				個人的に用いている、GitHub Desktopをベースにすすめる。
+				レポジトリの追加は、GitHub Desktopの左上タブを開くと追加に関するタブがでてくる。
+				<p class="image">
+					<img src="./img/githubdesktop1.png" width="50%" alt="">
+				</p>
+				該当箇所をクリックすると、レポジトリを複製する方法が出てくるので、OverleafでコピーしたGit linkからローカルなレポジトリに複製すればよいだけである。
+				<p class="image">
+					<img src="./img/githubdesktop2.png" width="50%" alt="">
+				</p>
+			</ul>
+
+			今のところ、上記の方法で問題なくoverleafの編集をオフラインで行い、pushするときにマージするという操作が出来ています。
+			複数人で共同作業する際に、自分がオーナーでない場合などでも問題なく操作が出来ているかということは未確認である。
+		</div>
+	</div>
+	<!-- main contents fin  -->
+	<div id="footer"></div>
+	<!-- footer fin -->
+</body>
+
+</html>
+

@@ -488,7 +488,7 @@ h3#sub_title{
 }
 
 p.image img {
-    width: 300px;  /* 横幅を200pxに */
+    /* width: 300px;  横幅を200pxに */
 }
 
 /* CV contents */
