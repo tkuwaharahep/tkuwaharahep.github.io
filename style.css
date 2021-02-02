@@ -459,6 +459,16 @@ a#subtitle{
     border: none;
     cursor: pointer;
 }
+.button_text button{
+    font-size: 18px;
+    display: inline-block;
+    padding: 0.5em 1em 0.3em;
+    color: #ffffff;
+    border-radius: 100px 5px;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+}
 div.indent_text {
     padding-left: 2em;
     padding-top: 1em;
