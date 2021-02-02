@@ -9,6 +9,41 @@
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script type='text/javascript' src="./js/menumini.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./academicons-1.9.1/css/academicons.min.css" />
+
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+    <link href="./fontawesome-free-5.15.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/brands.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/solid.css" rel="stylesheet">
+    <style type="text/css">
+        <!-- custom styling for all icons 
+        -->
+        i.fas,
+        i.fab
+        {
+        border:
+        1px
+        solid
+        red;
+        }
+    
+    <!-- custom styling for specific icons -->
+    .fa-fish {
+    color: salmon;
+    }
+    
+    .fa-frog {
+    color: green;
+    }
+    
+    .fa-user-ninja.vanished {
+    opacity: 0.0;
+    }
+    
+    .fa-facebook {
+    color: rgb(59, 91, 152);
+    }
+    </style>
 </head>
 
 <body>
@@ -41,7 +76,8 @@
         <div class="name_main">
             <h2>Takumi Kuwahara</h2>
         </div>
-        <div class="main_text">A postdoctoral researcher in particle phenomenology</div>
+        <div class="main_text">A postdoctoral researcher in particle phenomenology
+        </div>
     </div>
     <!-- main contents fin  -->
     <!-- sub panel -->
@@ -56,12 +92,12 @@
             <br>
             
             My publications in
-            <a href="https://inspirehep.net/literature?sort=mostrecent&q=author%3AT.Kuwahara.1%20AND%20collection%3Aciteable"
-                    target="blank">INSPIRE</a>/
-            <a href="https://inspirehep.net/authors/1257543" target="blank">INSPIRE(profile)</a>/
-            <a href="https://scholar.google.com/citations?user=t1LRm7gAAAAJ" target="blank">Google Scholar</a>/
-            <a href="https://orcid.org/0000-0003-3705-6836" target="blank">ORCID</a>
-            <br>
+            <div id="sns">
+                <a href="https://arxiv.org/search/?query=Kuwahara%2C+Takumi&searchtype=author&abstracts=show&order=-announced_date_first&size=50" target="blank"><i class="ai ai-arxiv ai-2x"></i></a>
+                <a href="https://inspirehep.net/authors/1257543" target="blank"><i class="ai ai-inspire ai-2x"></i></a> 
+                <a href="https://scholar.google.com/citations?hl=ja&user=t1LRm7gAAAAJ&view_op=list_works&sortby=pubdate" target="blank"><i class="ai ai-google-scholar ai-2x"></i></a> 
+                <a href="https://orcid.org/0000-0003-3705-6836" target="blank"><i class="ai ai-orcid-square ai-2x"></i></a>
+            </div>
             Details in "<a href="research.html">Researches</a>"
         </div>
         </div>
@@ -74,9 +110,12 @@
                 <p></p>
                 Details in "<a href="cv.html">Curriculum Vitae</a>"
                 <p></p>
-                <li>
-                    SNS: [<a href="https://www.facebook.com/takumi.kuwahara.18" target="blank">Facebook</a>] 
-                    [<a href="https://twitter.com/takumi_kuwahara" target="blank">Twitter</a>]
+                <small>Social Network</small>
+                <li id="sns"> 
+                    <a href="https://www.facebook.com/takumi.kuwahara.18" target="blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/takumi_kuwahara" target="blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.researchgate.net/profile/Takumi_Kuwahara" target="blank"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://www.linkedin.com/in/takumi-kuwahara-246b89204/" target="blank"><i class="fab fa-linkedin"></i></a>
                     <br>
                 </li>
             </ul>
@@ -84,7 +123,7 @@
             <h3 id="sub_title">Updates</h3>
             <div class="indent_text">
                 Since: Jan. 2013 <br>
-                Last update: Sep. 2020 
+                Last update: Jan. 2021 
             </div>
         </div>
     </div>

@@ -9,6 +9,39 @@
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type='text/javascript' src="./js/menumini.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+	<link href="./fontawesome-free-5.15.2-web/css/fontawesome.css" rel="stylesheet">
+	<link href="./fontawesome-free-5.15.2-web/css/brands.css" rel="stylesheet">
+	<link href="./fontawesome-free-5.15.2-web/css/solid.css" rel="stylesheet">
+	<style type="text/css">
+		<!-- custom styling for all icons 
+		-->
+		i.fas,
+		i.fab
+		{
+		border:
+		1px
+		solid
+		red;
+		}
+
+	<!-- custom styling for specific icons -->
+	.fa-fish {
+	color: salmon;
+	}
+
+	.fa-frog {
+	color: green;
+	}
+
+	.fa-user-ninja.vanished {
+	opacity: 0.0;
+	}
+
+	.fa-facebook {
+	color: rgb(59, 91, 152);
+	}
+	</style>
 </head>
 
 <body>
@@ -57,8 +90,11 @@
 	<!-- main contents -->
 	<div id="main">
 		<div class="main_text">
-			<h3 id="intro">Curriculum Vitae</h3>
-			<a href="cv/cv.pdf" target="_blank">Download CV (PDF) <img src='img/pdficon.png'></a>
+			<h3 id="intro">Curriculum Vitae </h3>
+			<button class="button_main">
+				<a href="cv/cv.pdf" target="_blank"><i class="fas fa-download"></i> Download CV <i class="fas fa-file-pdf"></i></a>
+			</button>
+			
 			<table border="0" cellpadding="2" cellspacing="4" class="cv">
 				<tr>
 					<th></th>
