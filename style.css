@@ -369,6 +369,16 @@ a#sub:active{color:#333;}
 a#sub:hover{color:#acacac;}
 a#sub{text-decoration:none;}
 
+a#icons:link{
+    font-size: 15pt;
+    text-decoration:none;
+    color:#333;
+}
+a#icons:visited{color:#333;}
+a#icons:active{color:#333;}
+a#icons:hover{color:#acacac;}
+a#icons{text-decoration:none;}
+
 a#subtitle{
     color:#DEDEDE;
     text-decoration:none;
