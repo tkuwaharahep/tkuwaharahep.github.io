@@ -459,6 +459,11 @@ a#subtitle{
     border-bottom: double 5px #FFC778;
     font-size: 13pt;/*文字サイズ*/
 }
+.main_text h4{
+    display: table; /*adjust text width*/
+    border-bottom: double 1px #0085b9;
+    font-size: 11pt;/*文字サイズ*/
+}
 .main_text button{
     font-size: 14px;
     display: inline-block;

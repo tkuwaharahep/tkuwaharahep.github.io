@@ -1,0 +1,112 @@
+<html ng-app="myApp">
+
+<!-- begin of header -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>Memorandums</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type='text/javascript' src="./js/menumini.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./academicons-1.9.1/css/academicons.min.css" />
+    
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+    <link href="./fontawesome-free-5.15.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/brands.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/solid.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/regular.css" rel="stylesheet">
+    <style type="text/css">
+        <!-- custom styling for all icons 
+        -->
+        i.fas,
+        i.fab
+        {
+        border:
+        1px
+        solid
+        red;
+        }
+    
+    <!-- custom styling for specific icons -->
+    .fa-fish {
+    color: salmon;
+    }
+    
+    .fa-frog {
+    color: green;
+    }
+    
+    .fa-user-ninja.vanished {
+    opacity: 0.0;
+    }
+    
+    .fa-facebook {
+    color: rgb(59, 91, 152);
+    }
+    </style>
+</head>
+
+<!-- end of header -->
+
+<body>
+    <!-- Header from here -->
+    <div id="title">
+        <nav class="headmenu">
+            <div class="title-inner">
+                <h1><a href="index.html">Takumi KUWAHARA</a></h1>
+            </div>
+            <div class="menu">
+                <div id="toggle"><a href="#">menu</a></div>
+                <ul id="menulist">
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="cv.html">Curriculum Vitae</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li id="thispage"><a href="misc.html">Misc.</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Header fin -->
+    <!-- Footer menu from here -->
+    <div id="footermenu">
+        <nav class="contentsmenu">
+            <div class="contentstitle-inner">
+                <h3>Misc. ||</h3>
+            </div>
+            <div class="submenu">
+                <ul>
+                    <li><a href="misc.html" id="sub">Misc. top</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Footer menu fin -->
+    <!-- main contents -->
+    <div id="main_woimg">
+        <div class="main_text">
+            <h3> 備忘録</h3>
+            自分が忘れたとき用の設定を諸々と載せておく。
+            <h4>Visual Studio Code + LaTeX</h4>
+            Extensionに<b>LaTeX Workshop</b>のみを導入している。
+            vscode左下の設定マーク<i class="fas fa-cog"></i>から、Setting（並びに右上<i class="far fa-file"></i>マーク）からsetting.jsonの編集を行う（setting.jsonの設定は<a href="https://qiita.com/popunbom/items/7d02fc75ad23b735d28c">参照</a>している）。
+            ユーザースニペットは、latex.jsonで編集可である。
+
+
+            <h4>Visual Studio Code + GitHub</h4>
+            いつの間にか<sup><a href="#Ref1">1</a></sup>に、VS CodeだけでGitHubとの連携ができるようになっていた。
+            Extensionは、<b>Git History</b> (by Don Jayamanne) と<b>GitHub Pull Requests and Issues</b> (by GitHub) ぐらい。
+            VS CodeとGitHubの連携Tipsに関しては<a href="https://vscode.github.com/">Tips</a>にまとめられているものを参照するもよし。
+
+            <p>
+                <a id="Ref1">[1]</a> いつからだっけ??
+            </p>
+        </div>
+    </div>
+    <!-- main contents fin  -->
+    <div id="footer"></div>
+    <!-- footer fin -->
+</body>
+
+</html>
