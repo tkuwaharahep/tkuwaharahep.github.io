@@ -1,0 +1,10 @@
+# 全てのクローラーを対象
+User-agent: *
+
+Disallow: /fontawesome-free-5.15.2-web/
+Disallow: /jekyll/
+Disallow: /academicons-1.9.1/
+Disallow: /about/
+Disallow: /Memorandums.html
+
+Sitemap: https://tkuwaharahep.github.io/sitemap.xml
