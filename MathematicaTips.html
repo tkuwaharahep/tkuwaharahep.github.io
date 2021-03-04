@@ -1,0 +1,98 @@
+<html ng-app="myApp">
+
+<!-- begin of header -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>Mathematica Tips</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="github.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type='text/javascript' src="./js/menumini.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+
+<!-- end of header -->
+
+<body>
+	<!-- Header from here -->
+	<div id="title">
+		<nav class="headmenu">
+			<div class="title-inner">
+				<h1><a href="index.html">Takumi KUWAHARA</a></h1>
+			</div>
+			<div class="menu">
+				<div id="toggle"><a href="#">menu</a></div>
+				<ul id="menulist">
+					<li><a href="index.html">Top</a></li>
+					<li><a href="cv.html">Curriculum Vitae</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li id="thispage"><a href="misc.html">Misc.</a></li>
+				</ul> 
+			</div>
+		</nav>
+	</div>
+	<!-- Header fin -->
+	<!-- Footer menu from here -->
+	<div id="footermenu">
+		<nav class="contentsmenu">
+			<div class="contentstitle-inner">
+				<h3>Misc. ||</h3>
+			</div>
+			<div class="submenu">
+				<ul>
+					<li><a href="misc.html" id="sub">Misc. top</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- Footer menu fin -->
+	<!-- main contents -->
+	<div id="main_woimg">
+		<div class="main_text">
+			<h3> Mathematica Tips</h3>
+
+			<ol class="page_contents">
+				<li><a href="#topic_notebookstyle">ノートブックのスタイルの変更</a></li>
+			</ol>
+
+			<h4 id="topic_notebookstyle">ノートブックのスタイルの変更</h4>
+			自前のMathematicaノートは、デフォルトのスタイルはたくさん書いてあるとどうにも視認性が悪い（個人的には）。
+			しばらくの間は標準レポートと呼ばれるスタイル付きノートブック[<a href="#Ref1">1</a>]を使っていたが、これまたOutputの背景がグレーなために、Plotで描いた図にグレーな枠取りが出てきます。
+			妙に細かいことが気になりだすと他の作業も手につかなくなるので、ノートブックのスタイルを少々いじることにした。
+			変更は比較的簡単で以下のような書き方で良さそう。
+			<br>
+			<pre class="code_p"><code class="prettyprint linenums">SetOptions[
+	SelectedNotebook[],
+	StyleDefinitions ->
+	Notebook[{
+		Cell[StyleData[StyleDefinitions -> "Report/StandardReport.nb"]],
+		Cell[StyleData["Output"], FontColor -> Black, Background -> White]
+	}]
+]			</code></pre>
+			<br>
+			もしくは、Mathematica階層以下のディレクトリ（<code>SystemFiles/FrontEnd/StyleSheets/</code>）にスタイルシート ファイル（例えば、個人的に使っているスタイルシートは<a href="./files/MyStyle.nb">こちら</a>）を置き、同じようにスタイルシートを呼び込めばいい。
+			<br>
+			<pre class="code_p"><code class="prettyprint linenums">SetOptions[
+	SelectedNotebook[],
+	StyleDefinitions ->
+	Notebook[{
+		Cell[StyleData[StyleDefinitions -> "myStyle/myStyle.nb"]]
+	}]
+]			</code></pre>
+			<hr>
+
+			<p>
+				<a id="Ref1">[1]</a> 枠取りがあったり、InputとOutputの背景が異なっていたりで、比較的視認性の高いスタイル付きノートブックである（と思っている）。
+			</p>
+		</div>
+	</div>
+	<!-- main contents fin  -->
+	<div id="footer"></div>
+	<!-- footer fin -->
+</body>
+
+</html>
+
