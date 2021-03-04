@@ -550,7 +550,7 @@ ol.page_contents li{
   font-size:14px;
   line-height: 30px;
   border-bottom: dashed 1px #F6A38B;
-  width:40%;
+  width: 50%;
 }
 ol.page_contents li:before{
   counter-increment: list;
