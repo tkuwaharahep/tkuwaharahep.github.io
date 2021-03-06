@@ -626,18 +626,17 @@ ol.page_contents a{
     list-style: none;
 }
 .list_misc li::before {
-  left: 1em;
-  margin: 0;
-  margin-right:20px;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: '\f054';
-  color: #F6A38B;
+    left: 1em;
+    margin: 0;
+    margin-right:20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f054';
+    color: #F6A38B;
 }
 .list_misc {
     line-height: 1.5;/*行間隔*/
     font-family: 'Hiragino Sans',Arial,sans-serif;
-    font-size: 10pt;/*文字サイズ*/
 }
 
 p.image img {
