@@ -584,6 +584,7 @@ ol.page_contents a{
 @media only screen and (max-width: 480px){
     .multilist_text li {
         margin: 1px;
+        list-style: none;
         padding: 0;
         width: 300px;
         margin-right: 0;
@@ -593,6 +594,7 @@ ol.page_contents a{
 @media screen and (min-width:480px){
     .multilist_text li {
         margin: 1px;
+        list-style: none;
         padding: 0;
         float: left;
         width: 300px;
@@ -600,13 +602,36 @@ ol.page_contents a{
         margin-bottom: 15px;
     }
 } 
+.multilist_text li::before {
+  left: 1em;
+  margin: 0;
+  margin-right:20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f054';
+  color: #F6A38B;
+}
 .multilist_text {
     line-height: 1.5;/*行間隔*/
     font-family: 'Hiragino Sans',Arial,sans-serif;
 }
-
 .clearmultilist {
     clear: left; 
+}
+.list_misc li {
+    position: relative;
+    margin: 1px;
+    margin-right:20px;
+    list-style: none;
+}
+.list_misc li::before {
+  left: 1em;
+  margin: 0;
+  margin-right:20px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f054';
+  color: #F6A38B;
 }
 
 p.image img {
