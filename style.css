@@ -582,23 +582,7 @@ ol.page_contents a{
 @media screen and (min-width:1024px){
 } */
 
-.multilist_text {
-    margin: 5px;
-    padding: 0;
-    width: 100vw;
-    list-style: outside;
-    font-size: 10pt;/*文字サイズ*/
-}
-.multilist_text li {
-    margin: 0;
-    padding: 0;
-    float: left;
-    width: 500px;
-    font-size: 10pt;/*文字サイズ*/
-}
-.clearmultilist {
-    clear: left; 
-}
+
 
 p.image img {
     /* width: 300px;  横幅を200pxに */
