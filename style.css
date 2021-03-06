@@ -581,19 +581,30 @@ ol.page_contents a{
 }
 @media screen and (min-width:1024px){
 } */
-
+@media only screen and (max-width: 480px){
+    .multilist_text li {
+        margin: 1px;
+        padding: 0;
+        width: 300px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width:480px){
+    .multilist_text li {
+        margin: 1px;
+        padding: 0;
+        float: left;
+        width: 300px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+} 
 .multilist_text {
     line-height: 1.5;/*行間隔*/
     font-family: 'Hiragino Sans',Arial,sans-serif;
 }
-.multilist_text li {
-    margin: 1px;
-    padding: 0;
-    float: left;
-    width: 300px;
-    margin-right: 0;
-    margin-bottom: 15px;
-}
+
 .clearmultilist {
     clear: left; 
 }
