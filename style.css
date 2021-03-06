@@ -624,6 +624,9 @@ ol.page_contents a{
     margin: 1px;
     margin-right:20px;
     list-style: none;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
 }
 .list_misc li::before {
     left: 1em;
