@@ -636,6 +636,7 @@ ol.page_contents a{
 .list_misc {
     line-height: 1.5;/*行間隔*/
     font-family: 'Hiragino Sans',Arial,sans-serif;
+    font-size: 10pt;/*文字サイズ*/
 }
 
 p.image img {
