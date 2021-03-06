@@ -587,6 +587,7 @@ ol.page_contents a{
     padding: 0;
     width: 100vw;
     list-style: outside;
+    font-size: 10pt;/*文字サイズ*/
 }
 .multilist_text li {
     margin: 3px;
