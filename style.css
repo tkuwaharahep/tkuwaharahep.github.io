@@ -204,7 +204,7 @@ li#thispage a{
         text-align: center;
         text-decoration: none;
     }
-    #toggle:before {
+    /* #toggle:before {
         display: block;
         content: "";
         position: absolute;
@@ -214,20 +214,19 @@ li#thispage a{
         height: 20px;
         margin-top: -10px;
         background: #fff;
-    }
-    #toggle a:before, 
-    #toggle a:after {
-        display: block;
-        content: "";
+    } */
+    #toggle:before {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 10px;
         width: 20px;
-        height: 4px;
-        background: black;
+        height: 20px;
+        font-family: "Font Awesome 5 Free";
+        font-size: 30px;
+        font-weight: 900;
+        content: '\f0c9';
+        color: #ffffff;
     }
-    #toggle a:before {margin-top: -6px;}
-    #toggle a:after {margin-top: 2px;}
 
     #topimg {padding-top: 12em;}
     #cvimg {padding-top: 12em;}
