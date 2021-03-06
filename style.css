@@ -633,6 +633,10 @@ ol.page_contents a{
   content: '\f054';
   color: #F6A38B;
 }
+.list_misc {
+    line-height: 1.5;/*行間隔*/
+    font-family: 'Hiragino Sans',Arial,sans-serif;
+}
 
 p.image img {
     /* width: 300px;  横幅を200pxに */
