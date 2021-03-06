@@ -527,52 +527,60 @@ code{
 }
 
 .code_p {
-  display: inline-block;
-  padding: 0.1em 0.25em; /* 文字周りの余白 */
-  color: #444; /* 文字色 */
-  background-color: #e7edf3; /* 背景色 */
-  border-radius: 3px; /* 角丸 */
-  border: solid 1px #d6dde4; /* 枠線 */
+    display: inline-block;
+    padding: 0.1em 0.25em; /* 文字周りの余白 */
+    color: #444; /* 文字色 */
+    background-color: #e7edf3; /* 背景色 */
+    border-radius: 3px; /* 角丸 */
+    border: solid 1px #d6dde4; /* 枠線 */
 }
 
 /* Page Contents */
 ol.page_contents{
-  counter-reset:list;
-  list-style-type:none;
-  font: 14px/1.6 'arial narrow', sans-serif;
-  padding:0;
+    counter-reset:list;
+    list-style-type:none;
+    font: 'arial narrow', sans-serif;
+    padding:0;
 }
 ol.page_contents li{
-  position:relative;
-  padding: 0 0 0 20px;
-  margin: 7px 0px 7px 0px;
-  font-weight: bold;
-  font-size:14px;
-  line-height: 30px;
-  border-bottom: dashed 1px #F6A38B;
-  width: 50%;
+    position:relative;
+    padding: 0 0 0 20px;
+    margin: 7px 0px 7px 0px;
+    font-weight: bold;
+    font-size:14px;
+    line-height: 30px;
+    border-bottom: dashed 1px #F6A38B;
+    width: 20em;
 }
 ol.page_contents li:before{
-  counter-increment: list;
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0px;
-  height: 0;
-  width: 0;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-left: 7px solid #F6A38B;
-  top: 50%;
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    counter-increment: list;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    height: 0;
+    width: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid #F6A38B;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 ol.page_contents a{
-text-decoration:none; /* 装飾(下線)を消す */
+    text-decoration:none; /* 装飾(下線)を消す */
 }
+
+
+/* @media only screen and (max-width: 480px){
+}
+@media screen and (min-width:480px) and (max-width:1024px){
+}
+@media screen and (min-width:1024px){
+} */
 
 .multilist_text {
     margin: 5px;
