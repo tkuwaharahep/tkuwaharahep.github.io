@@ -93,6 +93,26 @@
             Extensionは、<b>Git History</b> (by Don Jayamanne) と<b>GitHub Pull Requests and Issues</b> (by GitHub) ぐらい。
             VS CodeとGitHubの連携Tipsに関しては<a href="https://vscode.github.com/">Tips</a>にまとめられているものを参照するもよし。
 
+
+            <h4>Latexdiff + Compile Error</h4>
+            latexdiffは数式にalign環境を用いるとエラーを吐く。
+            latexdiffのコマンドはシェルになっているので、直接編集することも可能である。
+
+            <p class="code_p">
+                <code class="prettyprint linenums">
+                    my $ARRENV='(?:aligned|align|array|[pbvBV]?matrix|smallmatrix|cases|split)';
+                </code>
+            </p><br>
+            または、オプションとして次を使う。<br>
+            <p class="code_p">
+                <code class="prettyprint linenums">
+                    latexdiff --math-markup=1 old.tex new.tex > diff.tex
+                </code>
+            </p><br>
+            <code>--math-markup</code>は、デフォルトで2で数が小さいほど、latexdiffでの数式の処理が雑になる。alignを使ったtexでのエラーも少なくなる。
+
+
+            <br>
             <p>
                 <a id="Ref1">[1]</a> いつからだっけ??
             </p>
