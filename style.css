@@ -253,7 +253,7 @@ li#thispage a{
         height: auto;
         background-color: #FDFDFD;
         margin: 0;
-        padding: 0;
+        padding: 00;
         }
     #sub_menu{
         width: 80%;
@@ -515,6 +515,7 @@ h3#sub_title{
 }
 #sub_contact li{
     list-style: none;
+    text-indent: -1rem;
 }
 #sub_menu li{
     list-style: none;
