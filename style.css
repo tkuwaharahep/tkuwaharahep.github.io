@@ -463,11 +463,25 @@ a#subtitle{
     border-bottom: double 5px #FFC778;
     font-size: 18pt;/*文字サイズ*/
 }
-.main_text h4{
-    display: table; /*adjust text width*/
-    border-bottom: double 1px #0085b9;
-    font-size: 16pt;/*文字サイズ*/
+@media screen and (max-width: 480px) {
+    .main_text h4 {
+        display: table;
+        /*adjust text width*/
+        border-bottom: double 1px #0085b9;
+        font-size: 12pt; /*文字サイズ*/
+    }
 }
+@media screen and (min-width: 480px) {
+    .main_text h4 {
+        display: table;
+        /*adjust text width*/
+        border-bottom: double 1px #0085b9;
+        font-size: 16pt; /*文字サイズ*/
+    }
+}
+
+
+
 .main_text button{
     font-size: 16px;
     display: inline-block;
@@ -587,7 +601,7 @@ ol.page_contents a{
 }
 @media screen and (min-width:1024px){
 } */
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     .multilist_text li {
         margin: 1px;
         list-style: none;
