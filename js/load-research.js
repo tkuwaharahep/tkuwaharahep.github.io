@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ${p.link ? `<a href="${p.link}" target="_blank"><i class="fas fa-globe-asia"></i></a>` : ""}
         ${p.pdf ? `<a href="${p.pdf}" target="_blank"><i class="far fa-file-pdf"></i></a>` : ""}
         <br>${p.date} @ ${p.place}<br>
-        "${p.title}"<br><br>
+        "${p.title}"<br>
       `;
                 list.appendChild(li);
             });
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ${p.link ? `<a href="${p.link}" target="_blank"><i class="fas fa-globe-asia"></i></a>` : ""}
         ${p.pdf ? `<a href="${p.pdf}" target="_blank"><i class="far fa-file-pdf"></i></a>` : ""}
         <br>${p.date} @ ${p.place}<br>
-        "${p.title}"<br><br>
+        "${p.title}"<br>
       `;
                 list.appendChild(li);
             });
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ${p.link ? `<a href="${p.link}" target="_blank"><i class="fas fa-globe-asia"></i></a>` : ""}
         ${p.pdf ? `<a href="${p.pdf}" target="_blank"><i class="far fa-file-pdf"></i></a>` : ""}
         <br>${p.date} @ ${p.place}<br>
-        "${p.title}"<br><br>
+        "${p.title}"<br>
       `;
                 list.appendChild(li);
             });
