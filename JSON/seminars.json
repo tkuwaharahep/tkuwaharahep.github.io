@@ -1,0 +1,146 @@
+[
+    {
+        "type": "Seminar",
+        "date": "23 June 2025",
+        "place": "South China Normal University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter with A Dark Photon Portal"
+    },
+    {
+        "type": "Seminar",
+        "date": "14 May 2025",
+        "place": "Chiba University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter"
+    },
+    {
+        "type": "Seminar",
+        "date": "12 May 2025",
+        "place": "Tokyo Metropolitan University",
+        "title": "Revisiting Q-ball Dark Matter: A Closer Look at Interaction with Matter"
+    },
+    {
+        "type": "Seminar",
+        "date": "6 Jan. 2025",
+        "place": "Jilin University",
+        "title": "Phenomenology of Confining Dark Sector: Through a Dark Photon Portal"
+    },
+    {
+        "type": "Seminar",
+        "date": "10 Oct. 2024",
+        "place": "Toyama University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter with A Dark Photon Portal"
+    },
+    {
+        "type": "Seminar",
+        "date": "8 Oct. 2024",
+        "place": "Kanazawa University",
+        "title": "Dark Vector Mesons at LHC Forward Detector Searches"
+    },
+    {
+        "type": "Seminar",
+        "date": "7 Oct. 2024",
+        "place": "Yokohama National University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter with A Dark Photon Portal"
+    },
+    {
+        "type": "Seminar",
+        "date": "27 Sep. 2024",
+        "place": "Kyushu University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter with A Dark Photon Portal"
+    },
+    {
+        "type": "Seminar",
+        "date": "16 Apr. 2024",
+        "place": "Hangzhou Institute for Advanced Study, UCAS",
+        "title": "Mediator decay through mixing with Degenerate Spectrum"
+    },
+    {
+        "type": "Seminar",
+        "date": "18–19 Oct. 2023",
+        "place": "Yonsei University",
+        "title": "Quantum Theory of Dark Matter Scattering (Lecture and Seminar)"
+    },
+    {
+        "type": "Seminar",
+        "date": "25 Sep. 2023",
+        "place": "Sichuan University",
+        "title": "Quantum Theory of Dark Matter Scattering"
+    },
+    {
+        "type": "Seminar",
+        "date": "8 May 2023",
+        "place": "Nagoya University",
+        "title": "Quantum Theory of Dark Matter Scattering"
+    },
+    {
+        "type": "Seminar",
+        "date": "18 Apr. 2023",
+        "place": "Jinan University, Guangzhou campus",
+        "title": "Dark Hadrons at the LHC Lifetime Frontier"
+    },
+    {
+        "type": "Seminar",
+        "date": "17 Apr. 2023",
+        "place": "Sun-Yat-Sen University, Guangzhou campus",
+        "title": "Quantum Theory of Dark Matter Scattering"
+    },
+    {
+        "type": "Seminar",
+        "date": "15 Apr. 2023",
+        "place": "Sun-Yat-Sen University, Zhuhai campus",
+        "title": "Quantum Theory of Dark Matter Scattering"
+    },
+    {
+        "type": "Seminar",
+        "date": "12 Apr. 2023",
+        "place": "Sun-Yat-Sen University, Zhuhai campus",
+        "title": "Unitarizing Dark Pion SIMPs"
+    },
+    {
+        "type": "Welcome Seminar",
+        "date": "29 Sep. 2021",
+        "place": "Center for High-Energy Physics, Peking University",
+        "title": "Dark QCD and Asymmetric Dark Matter"
+    },
+    {
+        "type": "Seminar",
+        "date": "7 Oct. 2020",
+        "place": "E-ken, Nagoya University",
+        "title": "Maximally self-interacting dark matter: A composite asymmetric dark matter scenario"
+    },
+    {
+        "type": "Seminar",
+        "date": "23 Sep. 2020",
+        "place": "Center for High-Energy Physics, Peking University",
+        "title": "Maximally self-interacting dark matter: A composite asymmetric dark matter scenario"
+    },
+    {
+        "type": "Welcome Seminar",
+        "date": "13 Oct. 2017",
+        "place": "Center for Theoretical Physics of Universe, Institute for Basic Science",
+        "title": "Supersymmetric Standard Models with Extra Matters"
+    },
+    {
+        "type": "Welcome Seminar",
+        "date": "1 May. 2017",
+        "place": "University of Tokyo, Hongo group",
+        "title": "Next-Leading Order Corrections to Four-Fermi Operators in Supersymmetric Theories"
+    },
+    {
+        "type": "Informal Seminar",
+        "date": "10 Mar. 2016",
+        "place": "Jožef Stefan Institute",
+        "title": "Nucleon Electric Dipole Moments in High-Scale Supersymmetric Models"
+    },
+    {
+        "type": "Seminar",
+        "date": "1 Nov. 2016",
+        "place": "Osaka University",
+        "title": "Threshold Corrections to Dimension-Six Proton Decay Operators in SUSY SU(5) GUTs"
+    },
+    {
+        "type": "Seminar",
+        "date": "5 Nov. 2015",
+        "place": "Tohoku University",
+        "title": "Threshold Corrections to Baryon Number Violating Operators in Supersymmetric SU(5) GUTs"
+    }
+]

@@ -1,0 +1,90 @@
+[
+    {
+        "conference": "素粒子物理学の進展",
+        "link": "http://www2.yukawa.kyoto-u.ac.jp/~ppp.ws/PPP2017/",
+        "pdf": null,
+        "date": "31 Jul - 4 Aug 2017",
+        "place": "京都 基礎物理学研究所",
+        "title": "Two-loop Anomalous Dimensions for Four-Fermi Operators in Supersymmetric Theories"
+    },
+    {
+        "conference": "Gordon Research Seminar/Conference",
+        "link": "https://indico.cern.ch/event/597024/",
+        "pdf": null,
+        "date": "24 Jun - 30 Jun 2017",
+        "place": "HKUST (Hong Kong), China",
+        "title": "Light Stop, Heavy Higgs, and Heavy Gluino in Supersymmetric Standard Models with Extra Matters (Short talk / selected)"
+    },
+    {
+        "conference": "KEK Theory Meeting (KEK-PH 2016)",
+        "link": "https://kds.kek.jp/event/19952/",
+        "pdf": null,
+        "date": "9 Feb - 12 Feb 2016",
+        "place": "Tsukuba, KEK",
+        "title": "GUT Scale Threshold Effect on Proton Decay"
+    },
+    {
+        "conference": "素粒子物理学の進展",
+        "link": "http://www2.yukawa.kyoto-u.ac.jp/~ppp.ws/PPP2015/",
+        "pdf": null,
+        "date": "14 Sep - 18 Sep 2015",
+        "place": "京都 基礎物理学研究所",
+        "title": "超対称大統一模型における陽子崩壊に寄与する有限補正の効果"
+    },
+    {
+        "conference": "Flavor Physics and CP Violation (FPCP 2015)",
+        "link": "http://fpcp2015.hepl.phys.nagoya-u.ac.jp/",
+        "pdf": "https://agenda.hepl.phys.nagoya-u.ac.jp/indico/getFile.py/access?contribId=92&sessionId=9&resId=0&materialId=poster&confId=170",
+        "date": "25 May - 29 May 2015",
+        "place": "Nagoya",
+        "title": "GUT Scale Threshold Effect on Proton Decay"
+    },
+    {
+        "conference": "Sakata Memorial KMI Workshop on 'Origin of Mass and Strong Coupling Gauge Theories' (SCGT15)",
+        "link": "http://www.kmi.nagoya-u.ac.jp/workshop/SCGT15/",
+        "pdf": null,
+        "date": "3 Mar - 6 Mar 2015",
+        "place": "Nagoya",
+        "title": "GUT Scale Threshold Effect on Proton Decay"
+    },
+    {
+        "conference": "Summer Institute 2014 — Phenomenology of Elementary Particles and Cosmology —",
+        "link": null,
+        "pdf": null,
+        "date": "21 Aug - 28 Aug 2014",
+        "place": "Yamanashi (Fuji-Yoshida)",
+        "title": "Grand Unified Theory in High-scale Supersymmetry"
+    },
+    {
+        "conference": "原子核三者若手夏の学校",
+        "link": null,
+        "pdf": null,
+        "date": "4 Aug - 9 Aug 2014",
+        "place": "木島平 (Nagano)",
+        "title": "Grand Unification and Proton Decay in High-scale Supersymmetry"
+    },
+    {
+        "conference": "KMI International Symposium 2013 on 'Quest for the Origin of Particles and the Universe'",
+        "link": "http://www.kmi.nagoya-u.ac.jp/workshop/KMI2013/",
+        "pdf": null,
+        "date": "11 Dec - 13 Dec 2013",
+        "place": "Nagoya, Aichi (KMI)",
+        "title": "Decoupling Can Revive Minimal Supersymmetric SU(5)"
+    },
+    {
+        "conference": "NNN13: International Workshop on Next generation Nucleon Decay and Neutrino Detectors",
+        "link": "https://indico.ipmu.jp/indico/event/17/",
+        "pdf": null,
+        "date": "11 Nov - 13 Nov 2013",
+        "place": "Kavli IPMU, Chiba (Kashiwa)",
+        "title": "Decoupling Can Revive Minimal Supersymmetric SU(5)"
+    },
+    {
+        "conference": "素粒子物理学の進展",
+        "link": "http://www2.yukawa.kyoto-u.ac.jp/~ppp.ws/PPP2013/",
+        "pdf": null,
+        "date": "5 Aug - 9 Aug 2013",
+        "place": "京都 基礎物理学研究所",
+        "title": "高スケール超対称性の下での超対称大統一模型と次元5の演算子による陽子崩壊"
+    }
+]
