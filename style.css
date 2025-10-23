@@ -16,7 +16,7 @@ h3 {
 }
 
 #title {
-    position: fixed;    /* fixed header*/
+    position: fixed; /* fixed header*/
     z-index: 20;
     width: 100%;
     height: 70px;
@@ -40,16 +40,6 @@ h3 {
 #toggle{
     display: none;
     width: 100%;
-}
-#footermenu {
-    position: fixed;    /* fixed header*/
-    width: 100%;
-    height: 60px;
-    background-color: #f92;
-    margin: 0;
-    font-size: 14px;
-    opacity: 0.9;
-    bottom: 0; /*下に固定*/
 }
 
 .headmenu{
@@ -156,7 +146,7 @@ li#thispage a{
     color: #333;
     border-bottom: 1px dashed #eee;
 }
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     /* Smallest width */
     #title {height: 50px;}
     .menu{
@@ -360,8 +350,6 @@ li#thispage a{
     }
 }
 
-
-
 a:link{color:#ee3377;}
 a:visited{color:#ee3377;}
 a:active{color:#ee3377;}
@@ -438,105 +426,125 @@ a#subtitle{
 }
 
 @media screen and (max-width: 480px) {
-    /* タブレット用 */
-    .main_title {
-        /*タイトル部分*/
-        background-color: #DCDCDF;
-        /*背景色*/
-        color: #221122;
-        /*文字色*/
+    /* for tablet */
+
+    #footermenu {
+        position: fixed;
+        /* fixed header*/
+        width: 100%;
+        height: 40px;
+        background-color: #f92;
+        margin: 0;
+        font-size: 10px;
+        opacity: 0.9;
+        bottom: 0;
+        /*下に固定*/
+    }
+
+    .multilist_text li {
+        margin: 1px;
+        list-style: none;
+        padding: 0;
+        width: 300x;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .main_title { /* title */
+        background-color: #DCDCDF; /* background color */
+        color: #221122; /* text color */
         margin: 0 0 0 0;
         padding: 8px 4px 7px 9px;
-        border-left: double 17px #888888;
-        /*左の二本線*/
-        border-right: dashed 2px #DCDCDF;
-        /*右の点線*/
+        border-left: double 17px #888888; /*left double lines*/
+        border-right: dashed 2px #DCDCDF; /*right line*/
         font-size: 12pt;
-        /*文字サイズ*/
         font-weight: bold;
-        /*太字*/
         font-family: 'Hiragino Sans', Arial, sans-serif;
         letter-spacing: 0em;
-        /*文字間隔*/
     }
     
     .main_text {
         padding: 8px 4px 7px 9px;
         margin: 0px 0px 0px 3px;
         line-height: 2;
-        /*行間隔*/
         background-color: #eee;
-        /*薄い背景色*/
         font-size: 10pt;
-        /*文字サイズ*/
         font-family: 'Hiragino Sans', Arial, sans-serif;
     }
     
     .main_text h3 {
-        display: table;
-        /*adjust text width*/
+        display: table; /*adjust text width*/
         border-top: solid 2px #FFC778;
-        /*上線*/
         border-bottom: double 5px #FFC778;
         font-size: 14pt;
-        /*文字サイズ*/
     }
     .main_text h4 {
         display: table;
-        /*adjust text width*/
         border-bottom: double 1px #0085b9;
-        font-size: 12pt; /*文字サイズ*/
+        font-size: 12pt;
     }
 }
+
+
 @media screen and (min-width: 480px) { 
-    /* PC用 設定 */
+    /* for laptop/desktop */
+
+    #footermenu {
+        position: fixed;
+        /* fixed header*/
+        width: 100%;
+        height: 60px;
+        background-color: #f92;
+        margin: 0;
+        font-size: 14px;
+        opacity: 0.9;
+        bottom: 10px;
+    }
+
+    .multilist_text li {
+        margin: 1px;
+        list-style: none;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    ul.multilist_text li {
+        float: left;
+        width: 300px;
+    }
+
     .main_title {
-        /*タイトル部分*/
         background-color: #DCDCDF;
-        /*背景色*/
-        color: #221122;
-        /*文字色*/
+        color: #221122;/* text color*/
         margin: 0 0 0 0;
         padding: 8px 4px 7px 9px;
         border-left: double 17px #888888;
-        /*左の二本線*/
         border-right: dashed 2px #DCDCDF;
-        /*右の点線*/
         font-size: 16pt;
-        /*文字サイズ*/
         font-weight: bold;
-        /*太字*/
         font-family: 'Hiragino Sans', Arial, sans-serif;
         letter-spacing: 0em;
-        /*文字間隔*/
     }
     
     .main_text {
         padding: 8px 4px 7px 9px;
         margin: 0px 0px 0px 3px;
         line-height: 2;
-        /*行間隔*/
         background-color: #eee;
-        /*薄い背景色*/
         font-size: 12pt;
-        /*文字サイズ*/
         font-family: 'Hiragino Sans', Arial, sans-serif;
     }
-    
     .main_text h3 {
         display: table;
-        /*adjust text width*/
         border-top: solid 2px #FFC778;
-        /*上線*/
         border-bottom: double 5px #FFC778;
         font-size: 18pt;
-        /*文字サイズ*/
     }
     .main_text h4 {
         display: table;
-        /*adjust text width*/
         border-bottom: double 1px #0085b9;
-        font-size: 16pt; /*文字サイズ*/
+        font-size: 16pt; 
     }
 }
 
@@ -654,35 +662,6 @@ ol.page_contents a{
 }
 
 
-/* @media only screen and (max-width: 480px){
-}
-@media screen and (min-width:480px) and (max-width:1024px){
-}
-@media screen and (min-width:1024px){
-} */
-@media screen and (max-width: 480px){
-    .multilist_text li {
-        margin: 1px;
-        list-style: none;
-        padding: 0;
-        width: 300x;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-}
-@media screen and (min-width:480px){
-    .multilist_text li {
-        margin: 1px;
-        list-style: none;
-        padding: 0;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-    ul.multilist_text li {
-        float: left;
-        width: 300px;
-    }
-} 
 .multilist_text li::before {
     left: 1em;
     margin: 0;
