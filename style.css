@@ -723,3 +723,35 @@ hr.style-1 {
    height: 70px;
    margin-top: -70px;
 }
+
+/* open/close animation of lists */
+.toggle-header {
+    cursor: pointer !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 70% !important;
+    padding: 8px 0 !important;
+    margin: 0 0 1em 0 !important;
+    box-sizing: border-box !important;
+}
+
+.toggle-content {
+    display: none;
+    padding-left: 20px;
+}
+
+.toggle-title {
+    flex: 1 !important; /* icon position fixed */
+    margin-right: 10px !important;
+}
+
+.toggle-icon {
+    flex-shrink: 0 !important; /* freeze */
+    font-size: 1em !important;
+    padding-left: 10px !important;
+}
+
+.toggle-header.active .toggle-icon {
+    transform: rotate(180deg); /* animation */
+}

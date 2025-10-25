@@ -113,3 +113,19 @@ document.addEventListener("DOMContentLoaded", () => {
             list.innerHTML = "<li>Failed to load seminars.</li>";
         });
 });
+
+document.querySelectorAll('.toggle-header').forEach(header => {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.toggle-icon');
+
+    header.addEventListener('click', () => {
+        const isOpen = content.style.display === 'block';
+
+        content.style.display = isOpen ? 'none' : 'block';
+        header.classList.toggle('active', !isOpen);
+
+        // アイコン切替
+        icon.classList.toggle('fa-plus', isOpen);
+        icon.classList.toggle('fa-minus', !isOpen);
+    });
+});
