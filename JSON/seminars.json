@@ -1,6 +1,12 @@
 [
     {
         "type": "Seminar",
+        "date": "26 Jan. 2026",
+        "place": "Ibaraki University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter"
+    },
+    {
+        "type": "Seminar",
         "date": "23 June 2025",
         "place": "South China Normal University",
         "title": "Phenomenology of Composite Asymmetric Dark Matter with A Dark Photon Portal"
