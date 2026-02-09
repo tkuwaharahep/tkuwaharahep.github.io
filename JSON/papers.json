@@ -1,5 +1,12 @@
 [
     {
+        "title": "Direct Detection and Cosmological Constraints of Dark Matter with Dark Dipoles",
+        "inspire": "3117352",
+        "arxiv": "2602.06861",
+        "journal": "",
+        "authors": "with J-C. Wang, S-R. Yuan"
+    },
+    {
         "title": "Composite Asymmetric Dark Matter from Primordial Black Holes",
         "inspire": "3085099",
         "arxiv": "2511.16354",
@@ -39,7 +46,7 @@
         "inspire": "2639057",
         "arxiv": "2303.03736",
         "journal": "JHEP 06 (2023) 208",
-        "authors": "with Shurun Yuan"
+        "authors": "with S-R. Yuan"
     },
     {
         "title": "Perturbative Unitarity of Strongly Interacting Massive Particle Models",

@@ -1,9 +1,15 @@
 [
     {
         "type": "Seminar",
+        "date": "5 Feb. 2026",
+        "place": "Nagoya University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter Models"
+    },
+    {
+        "type": "Seminar",
         "date": "26 Jan. 2026",
         "place": "Ibaraki University",
-        "title": "Phenomenology of Composite Asymmetric Dark Matter"
+        "title": "Phenomenology of Composite Asymmetric Dark Matter (Japanese)"
     },
     {
         "type": "Seminar",
