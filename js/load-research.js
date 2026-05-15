@@ -1,7 +1,7 @@
 
 // Paper List
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../JSON/papers.json") // 
+    fetch("./JSON/papers.json")
         .then(response => {
             if (!response.ok) throw new Error("Failed to load papers.json");
             return response.json();
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // International Talk
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../JSON/pres_int.json")
+    fetch("./JSON/pres_int.json")
         .then(res => res.json())
         .then(data => {
             const list = document.getElementById("pre_int-list");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Japanese Talk
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../JSON/pres_jap.json")
+    fetch("./JSON/pres_jap.json")
         .then(res => res.json())
         .then(data => {
             const list = document.getElementById("pre_jap-list");
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Poster Talk
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../JSON/pres_pos.json")
+    fetch("./JSON/pres_pos.json")
         .then(res => res.json())
         .then(data => {
             const list = document.getElementById("pre_pos-list");
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Seminar Talk
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("../JSON/seminars.json") // 
+    fetch("./JSON/seminars.json")
         .then(response => {
             if (!response.ok) throw new Error("Failed to load seminars.json");
             return response.json();
@@ -114,18 +114,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
-document.querySelectorAll('.toggle-header').forEach(header => {
-    const content = header.nextElementSibling;
-    const icon = header.querySelector('.toggle-icon');
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.toggle-header').forEach(header => {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector('.toggle-icon');
 
-    header.addEventListener('click', () => {
-        const isOpen = content.style.display === 'block';
+        header.addEventListener('click', () => {
+            const isOpen = content.style.display === 'block';
 
-        content.style.display = isOpen ? 'none' : 'block';
-        header.classList.toggle('active', !isOpen);
+            content.style.display = isOpen ? 'none' : 'block';
+            header.classList.toggle('active', !isOpen);
 
-        // アイコン切替
-        icon.classList.toggle('fa-plus', isOpen);
-        icon.classList.toggle('fa-minus', !isOpen);
+            icon.classList.toggle('fa-plus', isOpen);
+            icon.classList.toggle('fa-minus', !isOpen);
+        });
     });
 });

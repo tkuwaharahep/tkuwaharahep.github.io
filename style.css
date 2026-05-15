@@ -513,12 +513,19 @@ hr.style-1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
-    padding: 8px 0;
-    margin: 0 0 1em;
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    margin: 0.35rem 0 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
 }
 
-.toggle-content { display: none; padding-left: 20px; }
+.toggle-content {
+    display: none;
+    padding: 0.2rem 0.35rem 0.2rem 1.1rem;
+    margin-bottom: 0.7rem;
+}
 .toggle-title { flex: 1; margin-right: 10px; }
 .toggle-icon { flex-shrink: 0; font-size: 1em; padding-left: 10px; }
 .toggle-header.active .toggle-icon { transform: rotate(180deg); }
@@ -557,6 +564,161 @@ ol.page_contents li::before {
 }
 ol.page_contents a { text-decoration: none; color: var(--ink2); }
 
+/* ─── Inner pages ─────────────────────────────────────────── */
+.page-hero {
+    width: 90vw;
+    max-width: 1100px;
+    margin: 1.5rem auto 0;
+    padding: 1.5rem 2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.page-kicker {
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 0.4rem;
+}
+
+.page-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.page-lead {
+    margin-top: 0.4rem;
+    color: var(--ink2);
+    font-size: 16px;
+}
+
+.local-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.local-nav a {
+    color: var(--ink2);
+    font-size: 15px;
+}
+
+.rich-content {
+    font-size: 17px;
+    color: var(--ink2);
+    line-height: 1.85;
+}
+
+.rich-content h3,
+.rich-content h4 {
+    color: var(--ink);
+    margin: 1rem 0 0.55rem;
+    line-height: 1.4;
+}
+
+.rich-content ul,
+.rich-content ol {
+    padding-left: 1.2em;
+    margin: 0.35rem 0 0.8rem;
+}
+
+.rich-content li {
+    margin-bottom: 0.4rem;
+}
+
+.rich-content p {
+    margin: 0 0 0.85rem;
+}
+
+.rich-content pre,
+.code_p {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.9rem;
+    overflow-x: auto;
+}
+
+.rich-content img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.info-table th,
+.info-table td {
+    border-bottom: 1px solid var(--border);
+    padding: 0.65rem 0.55rem;
+    vertical-align: top;
+}
+
+.info-table th {
+    width: 26%;
+    color: var(--ink3);
+    text-align: left;
+    font-weight: 500;
+}
+
+.timeline-list article {
+    border-left: 3px solid var(--accent2);
+    padding: 0.2rem 0 0.5rem 0.85rem;
+    margin-bottom: 0.95rem;
+}
+
+.research-list {
+    padding-left: 1.2em;
+    color: var(--ink2);
+}
+
+.research-list li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-mid);
+}
+
+.review-list {
+    list-style: disc;
+    padding-left: 1.2em;
+}
+
+.review-list li {
+    margin-bottom: 0.9rem;
+}
+
+.misc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 0.75rem;
+}
+
+.mini-card {
+    display: block;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--ink2);
+}
+
+.mini-card:hover {
+    background: var(--accent);
+    color: var(--surface);
+    border-color: var(--accent);
+    opacity: 1;
+}
+
 /* ─── Responsive ─────────────────────────────────────────── */
 
 /* Tablet */
@@ -578,6 +740,11 @@ ol.page_contents a { text-decoration: none; color: var(--ink2); }
 
     .area-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .page-hero {
+        width: 92vw;
+        padding: 1.25rem 1.5rem;
     }
 }
 
@@ -629,4 +796,17 @@ ol.page_contents a { text-decoration: none; color: var(--ink2); }
     .pub-link { flex-shrink: 0; }
 
     .toggle-header { width: 100%; }
+
+    .page-hero {
+        width: 94vw;
+        padding: 1.05rem 1rem;
+    }
+
+    .page-title {
+        font-size: 1.95rem;
+    }
+
+    .info-table th {
+        width: 34%;
+    }
 }
