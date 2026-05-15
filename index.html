@@ -1,146 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Takumi Kuwahara</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <script type='text/javascript' src="./js/menumini.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./academicons-1.9.1/css/academicons.min.css" />
-
-    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
     <link href="./fontawesome-free-7.1.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="./fontawesome-free-7.1.0-web/css/brands.css" rel="stylesheet">
     <link href="./fontawesome-free-7.1.0-web/css/solid.css" rel="stylesheet">
-	<link href="./fontawesome-free-7.1.0-web/css/regular.css" rel="stylesheet">
-    <style type="text/css">
-	/* custom styling for all icons */
-    i.fas,
-    i.fab {
-    border:
-    none;
-    }
-    
-	/* custom styling for specific icons */
-    .fa-fish {
-    color: salmon;
-    }
-    .fa-frog {
-    color: green;
-    }
-    .fa-user-ninja.vanished {
-    opacity: 0.0;
-    }
-    .fa-facebook {
-    color: rgb(59, 91, 152);
-    }
+    <link href="./fontawesome-free-7.1.0-web/css/regular.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <style>
+        .icon-pill i, .icon-pill .ai { margin-right: 6px; font-size: 1.1em; vertical-align: middle; }
+        .pub-link i, .pub-link .ai  { margin-right: 5px; font-size: 1em;   vertical-align: middle; }
     </style>
-    <!-- Fabicon -->
-    <link rel="icon" type="image/png" href="./favicon_io/android-chrome-512x512.png">
 </head>
 
 <body>
-    <!-- Header from here -->
-    <div id="title">
-    <nav class="headmenu">
-        <div class="title-inner">
-            <h1><a href="index.html">Takumi KUWAHARA</a></h1>
-        </div>
-        <div class="menu">
-            <div id="toggle"><a href="#">MENU</a></div>
-            <ul id="menulist">
-                <li id="thispage"><a href="index.html">Top</a></li>
-                <li><a href="cv.html">Curriculum Vitae</a></li>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-name">
+                <a href="index.html">Takumi KUWAHARA</a>
+            </div>
+            <!-- Desktop menu -->
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">Top</a></li>
+                <li><a href="cv.html">CV</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="lecture.html">Lectures</a></li>
                 <li><a href="misc.html">Misc.</a></li>
-            </ul> 
+            </ul>
+            <!-- Hamburger button (mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile drawer -->
+        <div class="mobile-drawer" id="mobile-drawer">
+            <a href="index.html" class="active">Top</a>
+            <a href="cv.html">Curriculum Vitae</a>
+            <a href="research.html">Research</a>
+            <a href="lecture.html">Lectures</a>
+            <a href="misc.html">Misc.</a>
         </div>
     </nav>
-    </div>
-   
-    <!-- Header fin -->
-    <!-- top-image panel -->
-    <div id="topimg">
-        <p>at Australia, Melbourne</p>
-    </div>
-    <!-- top-image panel fin -->
-    <!-- main contents -->
-    <div id="main">
-        <div class="name_main">
-            <h2>Takumi Kuwahara</h2>
-        </div>
-        <div class="main_text">An assistant professor in particle phenomenology
-        </div>
-    </div>
-    <!-- main contents fin  -->
-    <!-- sub panel -->
-    <div id="sub_panel">
-        <div id="sub_main">
-        <h3 id="sub_title">
-            Research
-        </h3> 
-        
-        <div class="indent_text">
-            Research Area: <br>
-            <b>Particle Physics, Particle Phenomenology</b><br>
-            <br>
-            Research Keywords: <br>
-            Dark Matter Physics, Flavor Physics, CP violation, Radiative Corrections, Inflation, <br>
-            Supersymmetric Phenomenology, Grand Unification, Baryon/Lepton Number Violation <br>
-            <br>
-            
-            My publications
-            <div>
-                <a href="https://arxiv.org/search/?query=Kuwahara%2C+Takumi&searchtype=author&abstracts=show&order=-announced_date_first&size=50" target="blank" id='icons'><i class="ai ai-arxiv ai-2x"></i></a> 
-                <a href="http://arxiv.org/a/kuwahara_t_1"
-                    target="blank" id='icons'><i class="ai ai-arxiv-square ai-2x"></i></a>
-                <a href="https://inspirehep.net/authors/1257543" target="blank" id='icons'><i class="ai ai-inspire ai-2x"></i></a>  
-                <a href="https://scholar.google.com/citations?hl=ja&user=t1LRm7gAAAAJ&view_op=list_works&sortby=pubdate" target="blank" id='icons'><i class="ai ai-google-scholar ai-2x"></i></a>  
-                <a href="https://orcid.org/0000-0003-3705-6836" target="blank" id='icons'><i class="ai ai-orcid-square ai-2x"></i></a> 
-                <a href="https://www.zotero.org/tkuwahara" target="blank" id='icons'><i class="ai ai-zotero-square ai-2x"></i></a>
 
+    <!-- Hero -->
+    <div id="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Takumi<br>Kuwahara</h1>
+                <p class="hero-role">Assistant Professor &middot; Particle Phenomenology</p>
             </div>
-        </div>
-        </div>
-
-        <div id="sub_contact">
-            <h3 id="sub_title">Contact</h3>
-            <ul>
-                <li>
-                    <span>E-mail: (please change _at_ into @)</span> <br>
-                    takumi.kuwahara.hep_at_gmail.com <br> 
-                    kuwahara_at_pku.edu.cn <br>
-                    kuwahara_at_jlu.edu.cn
-                </li>
-                <li> Address: Center for Theoretical Physics and College of Physics, Jilin University, Changchun, 130012, China </li>
-                <!-- <li> Address: Center for High Energy Physics, -->
-                <!-- Peking University, No.5, Yiheyuan Road, Haidian District, Beijing 100871, China </li> -->
-                <br>
-                <li> 
-                Social Network <br>
-                </li>
-                <a href="https://www.facebook.com/takumi.kuwahara.18" target="blank" id='icons'><i class="fab fa-facebook-square ai-2x"></i></a> 
-                <a href="https://twitter.com/takumi_kuwahara" target="blank" id='icons'><i class="fab fa-twitter-square ai-2x"></i></a> 
-                <a href="https://www.researchgate.net/profile/Takumi_Kuwahara" target="blank" id='icons'><i class="fab fa-researchgate ai-2x"></i></a> 
-                <a href="https://www.linkedin.com/in/takumi-kuwahara-246b89204/" target="blank" id='icons'><i class="fab fa-linkedin ai-2x"></i></a> 
-                    <br>
-            </ul>
-            <br>
-            <h3 id="sub_title">Updates</h3>
-            <div class="indent_text">
-                Since: Jan. 2013 <br>
-                Last update: Feb. 2026
-            </div>
+            <p class="hero-caption">at Melbourne, Australia</p>
         </div>
     </div>
-    <!-- sub panel fin -->
-    <!-- footer -->
-    <div id="footer"></div>
-    <!-- footer fin -->
+
+    <!-- Main layout: sidebar + content -->
+    <div id="page-layout">
+
+        <!-- Sidebar (contact, profiles, social) -->
+        <aside id="sidebar">
+
+            <div class="sidebar-section">
+                <div class="section-label">Contact</div>
+
+                <div class="contact-item">
+                    <div class="field">Email</div>
+                    <div class="val">
+                        takumi.kuwahara.hep<span class="at">@</span>gmail.com<br>
+                        kuwahara<span class="at">@</span>pku.edu.cn<br>
+                        kuwahara<span class="at">@</span>jlu.edu.cn
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="field">Address</div>
+                    <div class="val">
+                        Center for Theoretical Physics<br>
+                        and College of Physics,<br>
+                        Jilin University,<br>
+                        Changchun, 130012, China
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="sidebar-section">
+                <div class="section-label">Academic Profiles</div>
+                <div class="icon-row">
+                    <a class="icon-pill" href="http://arxiv.org/a/kuwahara_t_1" target="_blank"><i class="ai ai-arxiv"></i>arXiv</a>
+                    <a class="icon-pill" href="https://inspirehep.net/authors/1257543" target="_blank"><i class="ai ai-inspire"></i>INSPIRE</a>
+                    <a class="icon-pill" href="https://scholar.google.com/citations?user=t1LRm7gAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar"></i>Scholar</a>
+                    <a class="icon-pill" href="https://orcid.org/0000-0003-3705-6836" target="_blank"><i class="ai ai-orcid"></i>ORCID</a>
+                    <a class="icon-pill" href="https://www.zotero.org/tkuwahara" target="_blank"><i class="ai ai-zotero"></i>Zotero</a>
+                </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="sidebar-section">
+                <div class="section-label">Social</div>
+                <div class="icon-row">
+                    <a class="icon-pill" href="https://www.facebook.com/takumi.kuwahara.18" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                    <a class="icon-pill" href="https://twitter.com/takumi_kuwahara" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                    <a class="icon-pill" href="https://www.researchgate.net/profile/Takumi_Kuwahara" target="_blank"><i class="fa-brands fa-researchgate"></i>ResearchGate</a>
+                    <a class="icon-pill" href="https://www.linkedin.com/in/takumi-kuwahara-246b89204/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="sidebar-divider"></div>
+
+            <div class="sidebar-section">
+                <div class="section-label">Updates</div>
+                <div class="val small">Since: Jan. 2013</div>
+                <div class="val small">Last update: Feb. 2026</div>
+            </div>
+
+        </aside>
+
+        <!-- Main content -->
+        <main id="main-content">
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-number">01</span>
+                    <span class="card-title">Research Area</span>
+                </div>
+                <div class="keywords">
+                    <span class="kw accent">Particle Physics</span>
+                    <span class="kw accent">Particle Phenomenology</span>
+                </div>
+                <div class="area-grid">
+                    <div class="area-item">
+                        <strong>Dark Matter</strong>
+                        Physics &amp; indirect signals
+                    </div>
+                    <div class="area-item">
+                        <strong>Flavor Physics</strong>
+                        CP violation, radiative corrections
+                    </div>
+                    <div class="area-item">
+                        <strong>SUSY &amp; GUT</strong>
+                        Supersymmetric phenomenology, grand unification
+                    </div>
+                    <div class="area-item">
+                        <strong>Cosmology</strong>
+                        Inflation, baryon/lepton number violation
+                    </div>
+                </div>
+                <div class="pub-row">
+                    <span class="pub-label">Publications</span>
+                    <a class="pub-link" href="https://arxiv.org/search/?query=Kuwahara%2C+Takumi&searchtype=author&abstracts=show&order=-announced_date_first&size=50" target="_blank"><i class="ai ai-arxiv"></i>arXiv search</a>
+                    <a class="pub-link" href="https://inspirehep.net/authors/1257543" target="_blank"><i class="ai ai-inspire"></i>INSPIRE HEP</a>
+                    <a class="pub-link" href="https://scholar.google.com/citations?user=t1LRm7gAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar"></i>Google Scholar</a>
+                    <a class="pub-link" href="https://orcid.org/0000-0003-3705-6836" target="_blank"><i class="ai ai-orcid"></i>ORCID</a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; Takumi Kuwahara</p>
+    </footer>
+
+    <script>
+        // Hamburger toggle
+        const btn = document.getElementById('hamburger');
+        const drawer = document.getElementById('mobile-drawer');
+        btn.addEventListener('click', function () {
+            const open = drawer.classList.toggle('open');
+            btn.classList.toggle('open', open);
+        });
+    </script>
+
 </body>
-
 </html>
