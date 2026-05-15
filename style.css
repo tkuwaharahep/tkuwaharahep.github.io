@@ -714,7 +714,7 @@ ol.page_contents a { text-decoration: none; color: var(--ink2); }
 
 .mini-card:hover {
     background: var(--accent);
-    color: #e8e0d0;
+    color: var(--surface);
     border-color: var(--accent);
     opacity: 1;
 }
