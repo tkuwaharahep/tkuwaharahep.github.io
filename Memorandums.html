@@ -1,129 +1,96 @@
-<html ng-app="myApp">
-
-<!-- begin of header -->
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <title>Memorandums</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <script type='text/javascript' src="./js/menumini.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./academicons-1.9.1/css/academicons.min.css" />
-    
-    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
-    <link href="./fontawesome-free-7.1.0-web/css/fontawesome.css" rel="stylesheet">
-    <link href="./fontawesome-free-7.1.0-web/css/brands.css" rel="stylesheet">
-    <link href="./fontawesome-free-7.1.0-web/css/solid.css" rel="stylesheet">
-    <link href="./fontawesome-free-7.1.0-web/css/regular.css" rel="stylesheet">
-    <style type="text/css">
-    /* custom styling for all icons */
-    i.fas,
-    i.fab {
-    border:
-    none;
-    }
-    
-	/* custom styling for specific icons */
-    .fa-fish {
-    color: salmon;
-    }
-    .fa-frog {
-    color: green;
-    }
-    .fa-user-ninja.vanished {
-    opacity: 0.0;
-    }
-    .fa-facebook {
-    color: rgb(59, 91, 152);
-    }
-    </style>
-    <!-- Fabicon -->
-    <link rel="icon" type="image/png" href="./favicon_io/android-chrome-512x512.png">
+    <link rel="stylesheet" type="text/css" href="github.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/brands.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/solid.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.15.2-web/css/regular.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
 </head>
-
-<!-- end of header -->
-
 <body>
-    <!-- Header from here -->
-    <div id="title">
-        <nav class="headmenu">
-            <div class="title-inner">
-                <h1><a href="index.html">Takumi KUWAHARA</a></h1>
-            </div>
-            <div class="menu">
-                <div id="toggle"><a href="#">MENU</a></div>
-                <ul id="menulist">
-                    <li><a href="index.html">Top</a></li>
-                    <li><a href="cv.html">Curriculum Vitae</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="lecture.html">Lectures</a></li>
-                    <li id="thispage"><a href="misc.html">Misc.</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!-- Header fin -->
-    <!-- Footer menu from here -->
-    <div id="footermenu">
-        <nav class="contentsmenu">
-            <div class="contentstitle-inner">
-                <h3>Misc. ||</h3>
-            </div>
-            <div class="submenu">
-                <ul>
-                    <li><a href="misc.html" id="sub">Misc. top</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!-- Footer menu fin -->
-    <!-- main contents -->
-    <div id="main_woimg">
-        <div class="main_text">
-            <h3> 備忘録</h3>
-            自分が忘れたとき用の設定を諸々と載せておく。
-            <h4>Visual Studio Code + LaTeX</h4>
-            Extensionに<b>LaTeX Workshop</b>のみを導入している。
-            vscode左下の設定マーク<i class="fas fa-cog"></i>から、Setting（並びに右上<i class="far fa-file"></i>マーク）からsetting.jsonの編集を行う（setting.jsonの設定は<a href="https://qiita.com/popunbom/items/7d02fc75ad23b735d28c">参照</a>している）。
-            ユーザースニペットは、latex.jsonで編集可である。
-
-
-            <h4>Visual Studio Code + GitHub</h4>
-            いつの間にか<sup><a href="#Ref1">1</a></sup>に、VS CodeだけでGitHubとの連携ができるようになっていた。
-            Extensionは、<b>Git History</b> (by Don Jayamanne) と<b>GitHub Pull Requests and Issues</b> (by GitHub) ぐらい。
-            VS CodeとGitHubの連携Tipsに関しては<a href="https://vscode.github.com/">Tips</a>にまとめられているものを参照するもよし。
-
-
-            <h4>Latexdiff + Compile Error</h4>
-            latexdiffは数式にalign環境を用いるとエラーを吐く。
-            latexdiffのコマンドはシェルになっているので、直接編集することも可能である。
-
-            <p class="code_p">
-                <code class="prettyprint linenums">
-                    my $ARRENV='(?:aligned|align|array|[pbvBV]?matrix|smallmatrix|cases|split)';
-                </code>
-            </p><br>
-            または、オプションとして次を使う。<br>
-            <p class="code_p">
-                <code class="prettyprint linenums">
-                    latexdiff --math-markup=1 old.tex new.tex > diff.tex
-                </code>
-            </p><br>
-            <code>--math-markup</code>は、デフォルトでは2で数が小さいほど、latexdiffでの数式の処理が雑になる。alignを使ったtexでのエラーもなくなる。
-
-
-            <br>
-            <p>
-                <a id="Ref1">[1]</a> いつからだっけ??
-            </p>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-name"><a href="index.html">Takumi KUWAHARA</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Top</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="lecture.html">Lectures</a></li>
+                <li class="active"><a href="misc.html">Misc.</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
         </div>
-    </div>
-    <!-- main contents fin  -->
-    <div id="footer"></div>
-    <!-- footer fin -->
-</body>
+        <div class="mobile-drawer" id="mobile-drawer">
+            <a href="index.html">Top</a>
+            <a href="cv.html">Curriculum Vitae</a>
+            <a href="research.html">Research</a>
+            <a href="lecture.html">Lectures</a>
+            <a href="misc.html" class="active">Misc.</a>
+        </div>
+    </nav>
 
+    <header class="page-hero">
+        <p class="page-kicker">Memo</p>
+        <h1 class="page-title">備忘録</h1>
+        <p class="page-lead">個人用の開発・執筆メモ。</p>
+    </header>
+
+    <div id="page-layout">
+        <aside id="sidebar" class="inner-sidebar">
+            <div class="sidebar-section">
+                <div class="section-label">On this page</div>
+                <ul class="local-nav">
+                    <li><a href="#vscode-latex">Visual Studio Code + LaTeX</a></li>
+                    <li><a href="#vscode-github">Visual Studio Code + GitHub</a></li>
+                    <li><a href="#latexdiff">Latexdiff + Compile Error</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-section"><a class="pub-link" href="misc.html">Back to Misc.</a></div>
+        </aside>
+
+        <main id="main-content">
+            <article class="card">
+                <div class="card-header"><span class="card-number">01</span><span class="card-title">本文</span></div>
+                <div class="rich-content">
+                    <p>自分が忘れたとき用の設定を諸々と載せておく。</p>
+                    <h4 id="vscode-latex">Visual Studio Code + LaTeX</h4>
+                    <p>Extensionに<b>LaTeX Workshop</b>のみを導入している。vscode左下の設定マーク<i class="fas fa-cog"></i>から、Setting（並びに右上<i class="far fa-file"></i>マーク）からsetting.jsonの編集を行う（setting.jsonの設定は<a href="https://qiita.com/popunbom/items/7d02fc75ad23b735d28c">参照</a>している）。ユーザースニペットは、latex.jsonで編集可である。</p>
+
+                    <h4 id="vscode-github">Visual Studio Code + GitHub</h4>
+                    <p>いつの間にか<sup><a href="#Ref1">1</a></sup>に、VS CodeだけでGitHubとの連携ができるようになっていた。Extensionは、<b>Git History</b> (by Don Jayamanne) と<b>GitHub Pull Requests and Issues</b> (by GitHub) ぐらい。VS CodeとGitHubの連携Tipsに関しては<a href="https://vscode.github.com/">Tips</a>にまとめられているものを参照するもよし。</p>
+
+                    <h4 id="latexdiff">Latexdiff + Compile Error</h4>
+                    <p>latexdiffは数式にalign環境を用いるとエラーを吐く。latexdiffのコマンドはシェルになっているので、直接編集することも可能である。</p>
+                    <p class="code_p"><code class="prettyprint linenums">my $ARRENV='(?:aligned|align|array|[pbvBV]?matrix|smallmatrix|cases|split)';</code></p>
+                    <p>または、オプションとして次を使う。</p>
+                    <p class="code_p"><code class="prettyprint linenums">latexdiff --math-markup=1 old.tex new.tex &gt; diff.tex</code></p>
+                    <p><code>--math-markup</code>は、デフォルトでは2で数が小さいほど、latexdiffでの数式の処理が雑になる。alignを使ったtexでのエラーもなくなる。</p>
+
+                    <p><a id="Ref1">[1]</a> いつからだっけ??</p>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer id="footer"><p>&copy; Takumi Kuwahara</p></footer>
+    <script>
+        const btn = document.getElementById('hamburger');
+        const drawer = document.getElementById('mobile-drawer');
+        btn.addEventListener('click', function () {
+            const open = drawer.classList.toggle('open');
+            btn.classList.toggle('open', open);
+        });
+    </script>
+</body>
 </html>
