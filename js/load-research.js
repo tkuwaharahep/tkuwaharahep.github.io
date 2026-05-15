@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
             papers.forEach(p => {
                 const li = document.createElement("li");
                 li.innerHTML = `
-          <b><a href="https://inspirehep.net/literature/${p.inspire}" target="_blank">${p.title}</a></b><br>
+          <b> <font color="teal"> ${p.title}</font> </b><br>
           [<a href="https://arxiv.org/abs/${p.arxiv}" target="_blank">${p.arxiv}</a> /
-          <b>${p.journal}</b>]<br>
+          <b>${p.journal}</b>] <a href="https://inspirehep.net/literature/${p.inspire}" target="_blank"><i class="ai ai-inspire"></i></a><br>
           ${p.authors}
         `;
                 list.appendChild(li);

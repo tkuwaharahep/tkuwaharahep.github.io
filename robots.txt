@@ -3,7 +3,7 @@ User-agent: *
 
 Disallow: /fontawesome-free-5.15.2-web/
 Disallow: /jekyll/
-Disallow: /academicons-1.9.1/
+Disallow: /academicons-1.9.4/
 Disallow: /about/
 Disallow: /Memorandums.html
 
