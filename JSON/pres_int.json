@@ -1,8 +1,16 @@
 [
     {
+        "conference": "Sichuan University and IBS CTPU-CGA joint workshop on frontier of theoretical particle physics and gravity",
+        "link": "https://indico-tdli.sjtu.edu.cn/event/4832/",
+        "pdf": "https://indico-tdli.sjtu.edu.cn/event/4832/contributions/20397/attachments/7769/13006/Sichuan-ibs_Kuwahara.pdf",
+        "date": "May. 24 - 27, 2026",
+        "place": "Sichuan University",
+        "title": "Composite Asymmetric Dark Matter from Primordial Black Holes"
+    },
+    {
         "conference": "The 4th Topics of Particle, Astro and Cosmo Frontiers (TOPAC 2026)",
         "link": "https://indico-tdli.sjtu.edu.cn/event/4560/",
-        "pdf": "https://indico-tdli.sjtu.edu.cn/event/4560/",
+        "pdf": "https://indico-tdli.sjtu.edu.cn/event/4560/contributions/19687/attachments/7608/12684/TOPAC2026_Kuwahara.pdf",
         "date": "Apr. 17 - 20, 2026",
         "place": "University of Electronic Science and Technology of China",
         "title": "Direct Detection of Composite Asymmetric Dark Matter"
