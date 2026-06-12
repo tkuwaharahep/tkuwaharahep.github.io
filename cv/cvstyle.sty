@@ -1,0 +1,184 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cvstyle}[2026/06/12 Academic CV style]
+
+\RequirePackage[a4paper,margin=1.7cm]{geometry}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+\RequirePackage{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage{hyperref}
+\RequirePackage{titlesec}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{etoolbox}
+\RequirePackage{ifthen}
+\RequirePackage{needspace}
+\RequirePackage{ragged2e}
+
+% ---------------------------
+% Colors
+% ---------------------------
+\definecolor{cvaccent}{HTML}{0E4B5A}
+\definecolor{cvtext}{HTML}{222222}
+\definecolor{cvmuted}{HTML}{666666}
+\definecolor{cvline}{HTML}{D6DEE3}
+\definecolor{cvsoft}{HTML}{F7FAFC}
+
+% ---------------------------
+% Hyperref
+% ---------------------------
+\hypersetup{
+  colorlinks=true,
+  urlcolor=cvaccent,
+  linkcolor=cvaccent,
+  citecolor=cvaccent,
+  pdfauthor={Takumi Kuwahara},
+  pdftitle={Curriculum Vitae}
+}
+
+% ---------------------------
+% Global formatting
+% ---------------------------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.28em}
+\setlist[itemize]{nosep,leftmargin=1.5em,topsep=0.2em}
+\setlist[enumerate]{nosep,leftmargin=1.8em,topsep=0.2em}
+\renewcommand{\familydefault}{\sfdefault}
+\color{cvtext}
+
+% ---------------------------
+% Section headings
+% ---------------------------
+\titleformat{\section}
+  {\Large\bfseries\color{cvaccent}}
+  {}
+  {0em}
+  {}
+  [\vspace{0.25em}\titlerule]
+
+\titlespacing*{\section}{0pt}{1.0em}{0.55em}
+
+% ---------------------------
+% Helpers
+% ---------------------------
+\newcommand{\cvsep}{\;\textbar\;}
+\newcommand{\cvdot}{\hspace{0.35em}{\color{cvmuted}$\cdot$}\hspace{0.35em}}
+
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{doi:#1}}
+\newcommand{\arXiv}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+\newcommand{\weblink}[2]{\href{#1}{#2}}
+
+% ---------------------------
+% Header
+% ---------------------------
+\newcommand{\makecvheader}[4]{
+  {\Huge\bfseries\color{cvaccent} #1}\par
+  \vspace{0.25em}
+  {\large #2}\par
+  {\normalsize #3}\par
+  \vspace{0.3em}
+  {\small\color{cvmuted} #4}\par
+  \vspace{0.8em}
+}
+
+% ---------------------------
+% Section note
+% ---------------------------
+\newcommand{\sectionnote}[1]{
+  {\small\color{cvmuted}#1\par}
+}
+
+% ---------------------------
+% Generic entry
+% #1 title
+% #2 organization
+% #3 location
+% #4 date
+% #5 description/body
+% ---------------------------
+\newcommand{\cventry}[5]{
+  \Needspace{4\baselineskip}
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & {\small\color{cvmuted}#4} \\
+    \textit{#2} & {\small\color{cvmuted}#3}
+  \end{tabularx}
+  #5
+  \vspace{0.45em}
+}
+
+% ---------------------------
+% Compact entry
+% ---------------------------
+\newcommand{\cvsimpleentry}[3]{
+  \Needspace{3\baselineskip}
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    #1 & {\small\color{cvmuted}#2}
+  \end{tabularx}
+  {\small #3}
+  \vspace{0.35em}
+}
+
+% ---------------------------
+% Publication entry
+% #1 authors
+% #2 title
+% #3 venue/journal
+% #4 links/info
+% ---------------------------
+\newcommand{\pubentry}[4]{
+  \item #1. ``\emph{#2}.'' #3. #4
+}
+
+% ---------------------------
+% Talk entry
+% #1 title
+% #2 event
+% #3 location
+% #4 date
+% #5 note
+% ---------------------------
+\newcommand{\talkentry}[5]{
+  \item ``\emph{#1}.'' #2, #3, #4%
+  \ifstrempty{#5}{}{ \textbf{(#5)}}.
+}
+
+% ---------------------------
+% Subheading inside sections
+% ---------------------------
+\newcommand{\cvsubsection}[1]{
+  \vspace{0.35em}
+  {\large\bfseries #1}\par
+  \vspace{0.2em}
+}
+
+% ---------------------------
+% Tight lists
+% ---------------------------
+\newenvironment{publist}{
+  \begin{enumerate}[leftmargin=1.8em,itemsep=0.55em]
+}{
+  \end{enumerate}
+}
+
+\newenvironment{talklist}{
+  \begin{itemize}[leftmargin=1.4em,itemsep=0.4em]
+}{
+  \end{itemize}
+}
+
+% ---------------------------
+% Research interest block
+% ---------------------------
+\newcommand{\researchinterests}[1]{
+  #1
+}
+
+% ---------------------------
+% Optional page break helper
+% ---------------------------
+\newcommand{\cvpagebreak}{
+  \newpage
+}
