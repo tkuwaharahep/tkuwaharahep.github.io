@@ -1,5 +1,19 @@
 [
     {
+        "invited": true,
+        "type": "Seminar",
+        "date": "3 July 2026",
+        "place": "Henan Normal University",
+        "title": "Phenomenology of Composite Asymmetric Dark Matter Models"
+    },
+    {
+        "invited": true,
+        "type": "Online Seminar",
+        "date": "16 Jun. 2026",
+        "place": "IPM, Tehran",
+        "title": "Composite Asymmetric Dark Matter from Primordial Black Holes"
+    },
+    {
         "type": "Seminar",
         "date": "5 Feb. 2026",
         "place": "Nagoya University",
@@ -12,6 +26,7 @@
         "title": "Phenomenology of Composite Asymmetric Dark Matter (Japanese)"
     },
     {
+        "invited": true,
         "type": "Seminar",
         "date": "23 June 2025",
         "place": "South China Normal University",
@@ -30,6 +45,7 @@
         "title": "Revisiting Q-ball Dark Matter: A Closer Look at Interaction with Matter"
     },
     {
+        "invited": true,
         "type": "Seminar",
         "date": "6 Jan. 2025",
         "place": "Jilin University",
@@ -67,7 +83,7 @@
     },
     {
         "type": "Seminar",
-        "date": "18–19 Oct. 2023",
+        "date": "18-19 Oct. 2023",
         "place": "Yonsei University",
         "title": "Quantum Theory of Dark Matter Scattering (Lecture and Seminar)"
     },
@@ -144,12 +160,14 @@
         "title": "Nucleon Electric Dipole Moments in High-Scale Supersymmetric Models"
     },
     {
+        "invited": true,
         "type": "Seminar",
         "date": "1 Nov. 2016",
         "place": "Osaka University",
         "title": "Threshold Corrections to Dimension-Six Proton Decay Operators in SUSY SU(5) GUTs"
     },
     {
+        "invited": true,
         "type": "Seminar",
         "date": "5 Nov. 2015",
         "place": "Tohoku University",

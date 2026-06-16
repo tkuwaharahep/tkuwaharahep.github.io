@@ -35,8 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const list = document.getElementById("pre_int-list");
             data.forEach(p => {
                 const li = document.createElement("li");
+                const invitedText = p.invited ? '\(<i>invited</i>\)' : '';
                 li.innerHTML = `
-        <font color="teal"><b>${p.conference}</b></font>
+        <font color="teal"><b>${p.conference}</b></font> ${invitedText}
         ${p.link ? `<a href="${p.link}" target="_blank"><i class="fas fa-globe-asia"></i></a>` : ""}
         ${p.pdf ? `<a href="${p.pdf}" target="_blank"><i class="far fa-file-pdf"></i></a>` : ""}
         <br>${p.date} @ ${p.place}<br>
@@ -98,8 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const list = document.getElementById("seminars-list");
             seminars.forEach(p => {
                 const li = document.createElement("li");
+                const invitedText = p.invited ? '\(<i>invited</i>\)' : '';
                 li.innerHTML = `
-                <font color="teal"><b>${p.type}</b></font>
+                <font color="teal"><b>${p.type}</b></font> ${invitedText}
                 <br>
                 ${p.date}, ${p.place}<br>
                 "${p.title}"

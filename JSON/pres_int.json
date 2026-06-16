@@ -1,9 +1,23 @@
 [
     {
+    "conference": "2026年紫金山暗物质研讨会",
+    "link": "https://indico.pmo.ac.cn/event/1142/",
+    "date": "July 20 - 25, 2026",
+    "place": "Xinjiang University",
+    "title": "Composite Asymmetric Dark Matter with A Dark Photon Portal: Multimessenger Tests"
+    },
+    {
+        "invited": true,
+        "conference": "ShanghaiTech University Workshop",
+        "date": "June 27, 2026",
+        "place": "ShanghaiTech University",
+        "title": "Dark Matter Phenomenology"
+    },
+    {
         "conference": "Sichuan University and IBS CTPU-CGA joint workshop on frontier of theoretical particle physics and gravity",
         "link": "https://indico-tdli.sjtu.edu.cn/event/4832/",
         "pdf": "https://indico-tdli.sjtu.edu.cn/event/4832/contributions/20397/attachments/7769/13006/Sichuan-ibs_Kuwahara.pdf",
-        "date": "May. 24 - 27, 2026",
+        "date": "May 24 - 27, 2026",
         "place": "Sichuan University",
         "title": "Composite Asymmetric Dark Matter from Primordial Black Holes"
     },
@@ -104,7 +118,8 @@
         "title": "Dark Hadrons at LHC Lifetime Frontier"
     },
     {
-        "conference": "CTPU Workshop on Particle Physics and Cosmology (invited)",
+        "invited": true,
+        "conference": "CTPU Workshop on Particle Physics and Cosmology",
         "link": "https://indico.ibs.re.kr/event/611/",
         "pdf": null,
         "date": "Oct 20 - 25, 2023",
@@ -120,7 +135,8 @@
         "title": "Dark Hadrons at LHC Lifetime Frontier"
     },
     {
-        "conference": "IBS and KMI Joint Workshop 2022 (invited)",
+        "invited": true,
+        "conference": "IBS and KMI Joint Workshop 2022",
         "link": "https://indico.ibs.re.kr/event/504/",
         "pdf": "https://indico-tdli.sjtu.edu.cn/event/1040/contributions/4800/attachments/2066/3152/TDLI-PKU.pdf",
         "date": "Aug 3 - 5, 2022",
@@ -200,7 +216,8 @@
         "title": "Two-loop Anomalous Dimensions for Four-Fermi Operators in Supersymmetric Theories"
     },
     {
-        "conference": "ECT* Baryon over Antibaryon (invited)",
+        "invited": true,
+        "conference": "ECT* Baryon over Antibaryon",
         "link": "https://www.ectstar.eu/workshops/baryons-over-antibaryons-the-nuclear-physics-of-sakharov/",
         "pdf": null,
         "date": "July 25 - July 29, 2016",
