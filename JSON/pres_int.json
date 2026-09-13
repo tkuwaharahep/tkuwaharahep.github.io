@@ -1,10 +1,32 @@
 [
     {
-    "conference": "2026年紫金山暗物质研讨会",
-    "link": "https://indico.pmo.ac.cn/event/1142/",
-    "date": "July 20 - 25, 2026",
-    "place": "Xinjiang University",
-    "title": "Composite Asymmetric Dark Matter with A Dark Photon Portal: Multimessenger Tests"
+        "conference": "The 7th Joint Workshop on the Standard Model and Beyond（第七届标准模型及新物理联合研讨会）",
+        "link": "https://indico.ihep.ac.cn/event/29150/",
+        "date": "Oct. 28 - Nov. 1, 2026",
+        "place": "Nanjing Normal University",
+        "title": "--"
+    },
+    {
+        "conference": "Zhuhai Particle Physics and Cosmology Symposium (ZPCS 2026)",
+        "link": "https://indico-tdli.sjtu.edu.cn/event/5001/",
+        "date": "Oct. 15 - 19, 2026",
+        "place": "Sun Yat-sen University, Zhuhai Campus",
+        "title": "Composite Asymmetric Dark Matter Assisted by Primordial Black Holes Evaporation"
+    },
+    {
+        "conference": "New directions EXploring the Unknown beyond the Standard Model (NEXUS 2026)",
+        "link": "https://indico-tdli.sjtu.edu.cn/event/4873/",
+        "date": "Sep. 10 - 13, 2026",
+        "place": "Tsung-Dao Lee Institute",
+        "title": "Direct detection and cosmological constraints of dark matter with dark dipoles",
+        "pdf": "https://indico-tdli.sjtu.edu.cn/event/4873/contributions/21419/attachments/8325/14068/NEXUS_Kuwahara.pdf"
+    },
+    {
+        "conference": "2026年紫金山暗物质研讨会",
+        "link": "https://indico.pmo.ac.cn/event/1142/",
+        "date": "July 20 - 25, 2026",
+        "place": "Xinjiang University",
+        "title": "Composite Asymmetric Dark Matter with A Dark Photon Portal: Multimessenger Tests"
     },
     {
         "invited": true,
